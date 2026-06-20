@@ -16,8 +16,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
-    <!-- Custom Style Sheet (Cache busted to version 4.0 to instantly load new colors and visuals) -->
-    <link rel="stylesheet" href="style.css?v=4.0">
+    <!-- Custom Style Sheet (Cache busted to version 5.0 to instantly load new colors and upgraded visuals) -->
+    <link rel="stylesheet" href="style.css?v=5.0">
 </head>
 <body>
 
@@ -333,14 +333,14 @@
         </div>
     </section>
 
-    <!-- WHAT WE DO Section (Elite 12-System Portfolio Showcase with Google Sheets Visual Grids) -->
-    <section id="system-showcase" class="system-showcase-section py-6 bg-dark-slate text-light">
+    <!-- WHAT WE DO Section (Completely redesigned to match standard premium light-gradient theme) -->
+    <section id="system-showcase" class="system-showcase-section py-6 bg-light-gradient">
         <div class="container">
             <div class="text-center mb-5" data-aos="fade-up">
                 <span class="text-uppercase tracking-wider subtitle-badge mb-3 d-inline-block">
                     <i class="fa-solid fa-cubes me-2"></i>WHAT WE DO
                 </span>
-                <h2 class="section-title text-white">Our Specialized Automation & Google Sheets Ecosystem</h2>
+                <h2 class="section-title text-primary-color">Our Core Automation Systems & Specialized Solutions</h2>
                 <p class="text-muted max-width-600 mx-auto">
                     Explore our comprehensive directory of custom-engineered platforms, Google Workspace integrations, and advanced trackers built to eliminate manual friction.
                 </p>
@@ -355,21 +355,23 @@
                                 <div class="sys-badge bg-warning-light text-warning"><i class="fa-solid fa-qrcode me-2"></i>Live Track</div>
                                 <span class="small text-muted"><i class="fa-solid fa-circle-check text-success"></i> Apps Script</span>
                             </div>
-                            <h5 class="text-white mb-2">QR-Based Attendance & Fully Automated Payroll (QR स्कैनिंग + ऑटोमैटिक सैलरी शीट जनरेटर)</h5>
+                            <h5 class="text-primary-color mb-2">QR-Based Attendance & Fully Automated Payroll</h5>
                             <p class="small text-muted mb-4">
-                                Scan QR codes via mobile to mark real-time employee check-ins directly into Google Sheets, instantly calculating monthly salary, PF, ESIC, and generating PDF payslips automatically.
+                                Scan QR codes via mobile to mark check-ins directly into Google Sheets. Instantly calculates gross salaries, PF/ESIC deductions, and prints automated payslips.
                             </p>
                         </div>
-                        <!-- High Fidelity Sheet Visual Grid (NEW LIVE VISUALS) -->
-                        <div class="sheet-visual-grid p-2 mb-2">
-                            <div class="sheet-visual-header d-flex gap-2 justify-content-between align-items-center">
-                                <span class="text-white">ID</span><span class="text-white">Employee Name</span><span class="text-white">In-Time</span><span class="text-white">Salary</span>
+                        <!-- Ultra-High Fidelity Visual Representation -->
+                        <div class="workflow-visual-box p-3">
+                            <div class="d-flex align-items-center gap-3 mb-2">
+                                <div class="visual-icon-circle bg-success"><i class="fa-solid fa-camera text-white"></i></div>
+                                <div class="flex-grow-1">
+                                    <span class="small text-muted d-block font-monospace">MOBILE CAMERA SCAN</span>
+                                    <span class="small fw-bold text-primary-color">QR Code Detected Successfully</span>
+                                </div>
                             </div>
-                            <div class="sheet-visual-row d-flex justify-content-between">
-                                <span>101</span><span class="text-white">Vishal Tiwari</span><span class="badge bg-success-light text-success py-1">09:15 AM</span><span class="text-warning">₹48,500</span>
-                            </div>
-                            <div class="sheet-visual-row d-flex justify-content-between">
-                                <span>102</span><span class="text-white">Nikunj Patel</span><span class="badge bg-success-light text-success py-1">09:30 AM</span><span class="text-warning">₹54,000</span>
+                            <div class="progress-bar-container">
+                                <div class="progress-label d-flex justify-content-between"><span>Payroll Processing</span> <strong>100% Done</strong></div>
+                                <div class="progress-track"><div class="progress-fill" style="width: 100%;"></div></div>
                             </div>
                         </div>
                     </div>
@@ -383,21 +385,20 @@
                                 <div class="sys-badge bg-primary-light text-blue"><i class="fa-solid fa-cart-shopping me-2"></i>Sales</div>
                                 <span class="small text-muted"><i class="fa-solid fa-circle-check text-success"></i> Auto-Manifest</span>
                             </div>
-                            <h5 class="text-white mb-2">End-to-End Order Management System (रियल-टाइम सेल्स पाइपलाइन और इन्वेंटरी सिंक)</h5>
+                            <h5 class="text-primary-color mb-2">End-to-End Order Management System</h5>
                             <p class="small text-muted mb-4">
                                 Centralize multi-channel order pipelines, sync real-time stocks, automate re-order thresholds, and print packing invoices automatically.
                             </p>
                         </div>
-                        <!-- High Fidelity Sheet Visual Grid (NEW LIVE VISUALS) -->
-                        <div class="sheet-visual-grid p-2 mb-2">
-                            <div class="sheet-visual-header d-flex gap-2 justify-content-between align-items-center">
-                                <span class="text-white">Item ID</span><span class="text-white">Stock Name</span><span class="text-white">Qty</span><span class="text-white">Status</span>
-                            </div>
-                            <div class="sheet-visual-row d-flex justify-content-between">
-                                <span>ATH-S1</span><span class="text-white">Balaji Packet</span><span>14,200</span><span class="badge bg-success-light text-success py-1">Synced</span>
-                            </div>
-                            <div class="sheet-visual-row d-flex justify-content-between">
-                                <span>ATH-S2</span><span class="text-white">Green Bag</span><span class="text-danger fw-bold">450</span><span class="badge bg-warning-light text-warning py-1">Low Stock</span>
+                        <!-- Step-by-Step Pipeline Work-Flow Visual -->
+                        <div class="workflow-visual-box p-3">
+                            <div class="pipeline-flow-wrapper">
+                                <span class="small text-muted d-block font-monospace mb-2">SALES PIPELINE STAGES</span>
+                                <div class="d-flex justify-content-between align-items-center gap-2">
+                                    <span class="badge bg-secondary-light text-blue py-2 px-3 small">1. Order Placed <i class="fa-solid fa-check ms-1"></i></span>
+                                    <i class="fa-solid fa-arrow-right text-muted"></i>
+                                    <span class="badge bg-success-light text-success py-2 px-3 small">2. Stock Synced <i class="fa-solid fa-check ms-1"></i></span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -411,22 +412,18 @@
                                 <div class="sys-badge bg-success-light text-success"><i class="fa-solid fa-truck-moving me-2"></i>Logistics</div>
                                 <span class="small text-muted"><i class="fa-solid fa-circle-check text-success"></i> Fleet Control</span>
                             </div>
-                            <h5 class="text-white mb-2">Logistics & Trip Management Suite (फ्यूल ट्रैकिंग, रूट एनालिसिस और ट्रिप मैनेजमेंट)</h5>
+                            <h5 class="text-primary-color mb-2">Logistics & Trip Management Suite</h5>
                             <p class="small text-muted mb-4">
                                 Track dispatch routes, driver trip allowances, toll costs, active fuel mileage charts, and gross trip profit analysis on central sheets.
                             </p>
                         </div>
-                        <!-- High Fidelity Sheet Visual Grid (NEW LIVE VISUALS) -->
-                        <div class="sheet-visual-grid p-2 mb-2">
-                            <div class="sheet-visual-header d-flex gap-2 justify-content-between align-items-center">
-                                <span class="text-white">Fleet No</span><span class="text-white">Route Path</span><span class="text-white">Fuel Avg</span><span class="text-white">Trip Margin</span>
+                        <!-- Active Trip Progress Visual -->
+                        <div class="workflow-visual-box p-3">
+                            <div class="progress-bar-container mb-2">
+                                <div class="progress-label d-flex justify-content-between"><span class="fw-bold">Gujarat to Mumbai Route</span> <strong>90% Completed</strong></div>
+                                <div class="progress-track"><div class="progress-fill" style="width: 90%;"></div></div>
                             </div>
-                            <div class="sheet-visual-row d-flex justify-content-between">
-                                <span>GJ-01-A</span><span class="text-white">Ahmd to Mum</span><span>4.2 km/l</span><span class="text-success fw-bold">34% Profit</span>
-                            </div>
-                            <div class="sheet-visual-row d-flex justify-content-between">
-                                <span>MH-02-B</span><span class="text-white">Pune to Del</span><span>3.9 km/l</span><span class="text-success fw-bold">29% Profit</span>
-                            </div>
+                            <span class="small text-muted d-block font-monospace"><i class="fa-solid fa-gas-pump text-success me-1"></i> Fuel Average Audit: <strong class="text-primary-color">15.2 km/l</strong></span>
                         </div>
                     </div>
                 </div>
@@ -439,21 +436,20 @@
                                 <div class="sys-badge bg-danger-light text-danger"><i class="fa-solid fa-hospital-user me-2"></i>Healthcare</div>
                                 <span class="small text-muted"><i class="fa-solid fa-circle-check text-success"></i> OPD Scheduler</span>
                             </div>
-                            <h5 class="text-white mb-2">Smart Hospital Management System (पेशेंट पोर्टल, डॉक्टर ओपीडी और वार्ड ऑक्युपेंसी ट्रैकर)</h5>
+                            <h5 class="text-primary-color mb-2">Smart Hospital Management System</h5>
                             <p class="small text-muted mb-4">
                                 Streamline patient clinic flows. Coordinate dynamic doctor OPD queues, track ward bed availability, and sync billing logs automatically.
                             </p>
                         </div>
-                        <!-- High Fidelity Sheet Visual Grid (NEW LIVE VISUALS) -->
-                        <div class="sheet-visual-grid p-2 mb-2">
-                            <div class="sheet-visual-header d-flex gap-2 justify-content-between align-items-center">
-                                <span class="text-white">Patient ID</span><span class="text-white">OPD Doctor</span><span class="text-white">Ward Bed</span><span class="text-white">Status</span>
+                        <!-- Hospital Bed & Queue Indicator Visuals -->
+                        <div class="workflow-visual-box p-3 d-flex justify-content-between align-items-center">
+                            <div>
+                                <span class="small text-muted d-block font-monospace">ACTIVE OPD QUEUE</span>
+                                <span class="h6 mb-0 text-danger"><i class="fa-solid fa-user-clock me-1"></i>3 Patients Pending</span>
                             </div>
-                            <div class="sheet-visual-row d-flex justify-content-between">
-                                <span>P-801</span><span class="text-white">Dr. J. Shah</span><span>ICU - Bed 04</span><span class="badge bg-success-light text-success py-1">Admitted</span>
-                            </div>
-                            <div class="sheet-visual-row d-flex justify-content-between">
-                                <span>P-802</span><span class="text-white">Dr. A. Patel</span><span>OPD Queue</span><span class="badge bg-warning-light text-warning py-1">In Consulting</span>
+                            <div class="text-end">
+                                <span class="small text-muted d-block font-monospace">ICU BED STATUS</span>
+                                <span class="badge bg-success-light text-success py-2">82% Ward Occupancy</span>
                             </div>
                         </div>
                     </div>
@@ -467,21 +463,18 @@
                                 <div class="sys-badge bg-cyan-light text-accent"><i class="fa-solid fa-scale-balanced me-2"></i>Accounts</div>
                                 <span class="small text-muted"><i class="fa-solid fa-circle-check text-success"></i> Auto Auditor</span>
                             </div>
-                            <h5 class="text-white mb-2">Government Compliance & Automated Books of Account Tracker (जीएसटी/टैक्स और वित्तीय कानूनों के ऑडिट का ऑटोमैटिक ट्रैकर)</h5>
+                            <h5 class="text-primary-color mb-2">Government Compliance & Automated Books of Account Tracker</h5>
                             <p class="small text-muted mb-4">
                                 Keep accounts legally compliant. Auto-audits ledger details, flags GST input gaps, tracks TDS limits, and logs compliance anomalies.
                             </p>
                         </div>
-                        <!-- High Fidelity Sheet Visual Grid (NEW LIVE VISUALS) -->
-                        <div class="sheet-visual-grid p-2 mb-2">
-                            <div class="sheet-visual-header d-flex gap-2 justify-content-between align-items-center">
-                                <span class="text-white">Ledger ID</span><span class="text-white">GST Code Audit</span><span class="text-white">TDS Threshold</span><span class="text-white">Audit Log</span>
-                            </div>
-                            <div class="sheet-visual-row d-flex justify-content-between">
-                                <span>L-334</span><span class="text-white">18% Bracket</span><span>Verified OK</span><span class="badge bg-success-light text-success py-1">Compliant</span>
-                            </div>
-                            <div class="sheet-visual-row d-flex justify-content-between">
-                                <span>L-335</span><span class="text-white">12% Bracket</span><span class="text-danger fw-bold">Anomaly Alert</span><span class="badge bg-warning-light text-warning py-1">Action Req</span>
+                        <!-- Audit Checklist Checklist Visual -->
+                        <div class="workflow-visual-box p-3">
+                            <span class="small text-muted d-block font-monospace mb-2">COMPLIANCE CHECKS</span>
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="badge bg-success text-white py-1 px-2"><i class="fa-solid fa-circle-check me-1"></i> GST Matches</span>
+                                <span class="badge bg-success text-white py-1 px-2"><i class="fa-solid fa-circle-check me-1"></i> TDS verified</span>
+                                <span class="badge bg-success text-white py-1 px-2"><i class="fa-solid fa-circle-check me-1"></i> Law Compliance: 100%</span>
                             </div>
                         </div>
                     </div>
@@ -495,18 +488,24 @@
                                 <div class="sys-badge bg-purple-light text-purple"><i class="fa-solid fa-code me-2"></i>Web Tech</div>
                                 <span class="small text-muted"><i class="fa-solid fa-circle-check text-success"></i> Custom Platforms</span>
                             </div>
-                            <h5 class="text-white mb-2">Premium Corporate Web Development (हाई-स्पीड कस्टम वेबसाइट्स और वेब एप्लीकेशन्स)</h5>
+                            <h5 class="text-primary-color mb-2">Premium Corporate Web Development</h5>
                             <p class="small text-muted mb-4">
                                 High-speed, responsive corporate portals, database integrations, administrative backends, and investor-ready systems built on custom web frameworks.
                             </p>
                         </div>
-                        <!-- High Fidelity Sheet Visual Grid (NEW LIVE VISUALS) -->
-                        <div class="sheet-visual-grid p-2 mb-2">
-                            <div class="sheet-visual-header d-flex gap-2 justify-content-between align-items-center">
-                                <span class="text-white">SEO Rank</span><span class="text-white">Server Speed</span><span class="text-white">Mobile Score</span><span class="text-white">SSL Status</span>
+                        <!-- Benchmark Circle Stats Visual -->
+                        <div class="workflow-visual-box p-3 d-flex justify-content-between align-items-center text-center">
+                            <div>
+                                <h6 class="text-success mb-1">99%</h6>
+                                <span class="small text-muted d-block font-monospace">PAGE SPEED</span>
                             </div>
-                            <div class="sheet-visual-row d-flex justify-content-between">
-                                <span>Rank #1</span><span class="text-white">99 / 100 A+</span><span>100% Responsive</span><span class="text-success fw-bold">Active HTTPS</span>
+                            <div>
+                                <h6 class="text-success mb-1">100%</h6>
+                                <span class="small text-muted d-block font-monospace">RESPONSIVE</span>
+                            </div>
+                            <div>
+                                <h6 class="text-success mb-1">A+</h6>
+                                <span class="small text-muted d-block font-monospace">SEO RANK</span>
                             </div>
                         </div>
                     </div>
@@ -520,22 +519,18 @@
                                 <div class="sys-badge bg-warning-light text-warning"><i class="fa-solid fa-map-location-dot me-2"></i>FMCG Focus</div>
                                 <span class="small text-muted"><i class="fa-solid fa-circle-check text-success"></i> Route Planner</span>
                             </div>
-                            <h5 class="text-white mb-2">FMCG Sales Force & Field Booking (फ़ील्ड सेल्स और लाइव डीलर ऑर्डर बुकिंग)</h5>
+                            <h5 class="text-primary-color mb-2">FMCG Sales Force & Field Booking</h5>
                             <p class="small text-muted mb-4">
                                 Track field sales team locations, schedule daily dealer routes, and let executives book orders on-site via custom mobile forms synced instantly with dispatch offices.
                             </p>
                         </div>
-                        <!-- High Fidelity Sheet Visual Grid (NEW LIVE VISUALS) -->
-                        <div class="sheet-visual-grid p-2 mb-2">
-                            <div class="sheet-visual-header d-flex gap-2 justify-content-between align-items-center">
-                                <span class="text-white">Sales Rep</span><span class="text-white">Dealer Shop</span><span class="text-white">Order booked</span><span class="text-white">Route Map</span>
+                        <!-- Route Target Progress Visual -->
+                        <div class="workflow-visual-box p-3">
+                            <div class="progress-bar-container mb-2">
+                                <div class="progress-label d-flex justify-content-between"><span class="fw-bold">Dealer Route Visited</span> <strong>8 / 10 Shops</strong></div>
+                                <div class="progress-track"><div class="progress-fill" style="width: 80%;"></div></div>
                             </div>
-                            <div class="sheet-visual-row d-flex justify-content-between">
-                                <span>Amit S.</span><span class="text-white">Krishna Stores</span><span>₹42,500</span><span class="badge bg-success-light text-success py-1">Route-A OK</span>
-                            </div>
-                            <div class="sheet-visual-row d-flex justify-content-between">
-                                <span>Suresh K.</span><span class="text-white">Maruti Provisions</span><span>₹28,900</span><span class="badge bg-success-light text-success py-1">Route-B OK</span>
-                            </div>
+                            <span class="small text-muted d-block font-monospace"><i class="fa-solid fa-wallet text-success me-1"></i> Order booked: <strong class="text-primary-color">₹48,000</strong></span>
                         </div>
                     </div>
                 </div>
@@ -548,21 +543,20 @@
                                 <div class="sys-badge bg-primary-light text-blue"><i class="fa-solid fa-barcode me-2"></i>Warehousing</div>
                                 <span class="small text-muted"><i class="fa-solid fa-circle-check text-success"></i> Rack Control</span>
                             </div>
-                            <h5 class="text-white mb-2">Smart Warehouse & Rack Barcoding (गोदाम रैक मैनेजमेंट और मोबाइल बारकोड स्कैनर)</h5>
+                            <h5 class="text-primary-color mb-2">Smart Warehouse & Rack Barcoding</h5>
                             <p class="small text-muted mb-4">
                                 Map inventory to specific rack locations. Generate and print dynamic QR/Barcodes directly from spreadsheet engines to facilitate quick handheld mobile scans.
                             </p>
                         </div>
-                        <!-- High Fidelity Sheet Visual Grid (NEW LIVE VISUALS) -->
-                        <div class="sheet-visual-grid p-2 mb-2">
-                            <div class="sheet-visual-header d-flex gap-2 justify-content-between align-items-center">
-                                <span class="text-white">Barcode ID</span><span class="text-white">Product Name</span><span class="text-white">Rack Location</span><span class="text-white">Scan Match</span>
+                        <!-- Barcode Scanner visual simulator -->
+                        <div class="workflow-visual-box p-3 d-flex justify-content-between align-items-center">
+                            <div>
+                                <span class="small text-muted d-block font-monospace">SCANNING SIMULATOR</span>
+                                <span class="badge bg-secondary-light text-blue py-2"><i class="fa-solid fa-barcode me-1"></i> ATH-901 matched</span>
                             </div>
-                            <div class="sheet-visual-row d-flex justify-content-between">
-                                <span>#ATH-901</span><span class="text-white">Lemon Juice</span><span>Row-C, Rack-4</span><span class="text-success fw-bold">100% Match</span>
-                            </div>
-                            <div class="sheet-visual-row d-flex justify-content-between">
-                                <span>#ATH-902</span><span class="text-white">Synergy Med</span><span>Row-A, Rack-2</span><span class="text-success fw-bold">100% Match</span>
+                            <div class="text-end">
+                                <span class="small text-muted d-block font-monospace">RACK LOCATION</span>
+                                <span class="badge bg-success-light text-success py-2">Row-C, Rack-4</span>
                             </div>
                         </div>
                     </div>
@@ -576,21 +570,17 @@
                                 <div class="sys-badge bg-success-light text-success"><i class="fa-brands fa-whatsapp me-2"></i>Marketing</div>
                                 <span class="small text-muted"><i class="fa-solid fa-circle-check text-success"></i> WhatsApp API</span>
                             </div>
-                            <h5 class="text-white mb-2">Custom CRM & WhatsApp Pipeline (कस्टम ग्राहक संबंध प्रबंधन और व्हाट्सएप पाइपलाइन)</h5>
+                            <h5 class="text-primary-color mb-2">Custom CRM & WhatsApp Pipeline</h5>
                             <p class="small text-muted mb-4">
                                 Manage leads across various pipeline stages. Automate scheduled, highly personalized WhatsApp follow-ups, trigger payment reminders, and track agent conversion scores.
                             </p>
                         </div>
-                        <!-- High Fidelity Sheet Visual Grid (NEW LIVE VISUALS) -->
-                        <div class="sheet-visual-grid p-2 mb-2">
-                            <div class="sheet-visual-header d-flex gap-2 justify-content-between align-items-center">
-                                <span class="text-white">Lead Name</span><span class="text-white">Sales Pipeline</span><span class="text-white">WhatsApp Alert</span><span class="text-white">Agent Score</span>
-                            </div>
-                            <div class="sheet-visual-row d-flex justify-content-between">
-                                <span>Rajesh M.</span><span class="text-white">Negotiation Stage</span><span class="text-success fw-bold">Followup-1 Sent</span><span class="text-warning">9.5 / 10</span>
-                            </div>
-                            <div class="sheet-visual-row d-flex justify-content-between">
-                                <span>Kiran S.</span><span class="text-white">Proposal Sent</span><span class="text-success fw-bold">Followup-2 Sent</span><span class="text-warning">8.8 / 10</span>
+                        <!-- Simulating WhatsApp messaging bubble visual -->
+                        <div class="workflow-visual-box p-3">
+                            <span class="small text-muted d-block font-monospace mb-2">WHATSAPP AUTOMATION LOG</span>
+                            <div class="whatsapp-bubble d-flex align-items-center justify-content-between p-2">
+                                <span class="small text-primary-color mb-0"><i class="fa-brands fa-whatsapp text-success me-1"></i> Payment Reminder Sent To Client</span>
+                                <i class="fa-solid fa-circle-check text-success"></i>
                             </div>
                         </div>
                     </div>
@@ -604,49 +594,44 @@
                                 <div class="sys-badge bg-danger-light text-danger"><i class="fa-solid fa-industry me-2"></i>Manufacturing</div>
                                 <span class="small text-muted"><i class="fa-solid fa-circle-check text-success"></i> Costing Engine</span>
                             </div>
-                            <h5 class="text-white mb-2">Manufacturing ERP & Auto-BOM (उत्पादन सामग्री गणना और कच्चे माल का ऑटोमैटिक कैलकुलेटर)</h5>
+                            <h5 class="text-primary-color mb-2">Manufacturing ERP & Auto-BOM</h5>
                             <p class="small text-muted mb-4">
                                 Streamline manufacturing batches. Auto-calculate exact raw material requirements based on Bill of Materials (BOM), track production scrap, and estimate batch profitability.
                             </p>
                         </div>
-                        <!-- High Fidelity Sheet Visual Grid (NEW LIVE VISUALS) -->
-                        <div class="sheet-visual-grid p-2 mb-2">
-                            <div class="sheet-visual-header d-flex gap-2 justify-content-between align-items-center">
-                                <span class="text-white">Raw Material</span><span class="text-white">BOM Required</span><span class="text-white">Warehouse Stock</span><span class="text-white">Status</span>
+                        <!-- Materials Tracker Progress Visual -->
+                        <div class="workflow-visual-box p-3">
+                            <div class="progress-bar-container mb-2">
+                                <div class="progress-label d-flex justify-content-between"><span class="fw-bold">Raw Polymer Stock Status</span> <strong>80% Optimized</strong></div>
+                                <div class="progress-track"><div class="progress-fill" style="width: 80%;"></div></div>
                             </div>
-                            <div class="sheet-visual-row d-flex justify-content-between">
-                                <span>Plastic Polymer</span><span>1,200 kg</span><span class="text-success">5,000 kg OK</span><span class="badge bg-success-light text-success py-1">In Stock</span>
-                            </div>
-                            <div class="sheet-visual-row d-flex justify-content-between">
-                                <span>Color Masterbatch</span><span>150 kg</span><span class="text-danger fw-bold">20 kg SHORT</span><span class="badge bg-warning-light text-warning py-1">Order Req</span>
-                            </div>
+                            <span class="small text-success d-block font-monospace"><i class="fa-solid fa-calculator me-1"></i> BOM Cost Margin Target: <strong class="text-primary-color">Compliant</strong></span>
                         </div>
                     </div>
                 </div>
 
                 <!-- 11. RFQ & Vendor Procurement Suite -->
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="555">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="550">
                     <div class="system-showcase-card glass-card p-4 d-flex flex-column justify-content-between h-100">
                         <div>
                             <div class="d-flex justify-content-between align-items-start mb-3">
                                 <div class="sys-badge bg-cyan-light text-accent"><i class="fa-solid fa-cart-flatbed me-2"></i>Procurement</div>
                                 <span class="small text-muted"><i class="fa-solid fa-circle-check text-success"></i> Auto-PO Gen</span>
                             </div>
-                            <h5 class="text-white mb-2">Automated RFQ & Vendor Bidding (सप्लायर दरों की ऑटो-तुलना और स्मार्ट पीओ जेनरेशन)</h5>
+                            <h5 class="text-primary-color mb-2">Automated RFQ & Vendor Bidding</h5>
                             <p class="small text-muted mb-4">
-                                Send automatic Request for Quotations (RFQs) to supplier portals. Compare raw material rates automatically on submission and generate error-free purchase orders.
+                                Send automatic Request for Quotations (RFQs) to supplier portals. Compare raw material rates automatically on submission and generate purchase orders.
                             </p>
                         </div>
-                        <!-- High Fidelity Sheet Visual Grid (NEW LIVE VISUALS) -->
-                        <div class="sheet-visual-grid p-2 mb-2">
-                            <div class="sheet-visual-header d-flex gap-2 justify-content-between align-items-center">
-                                <span class="text-white">Supplier Name</span><span class="text-white">Unit Rate Bid</span><span class="text-white">Delivery SLA</span><span class="text-white">Decision</span>
+                        <!-- RFQ Bidding visual comparison simulator -->
+                        <div class="workflow-visual-box p-3 d-flex justify-content-between align-items-center">
+                            <div>
+                                <span class="small text-muted d-block font-monospace">SUPPLIER A BID</span>
+                                <span class="badge bg-success-light text-success py-2"><i class="fa-solid fa-check me-1"></i> ₹42 (Auto-Selected)</span>
                             </div>
-                            <div class="sheet-visual-row d-flex justify-content-between">
-                                <span>Supplier Alpha</span><span class="text-success fw-bold">₹42 / unit</span><span>02 Days</span><span class="badge bg-success-light text-success py-1">Auto-Selected</span>
-                            </div>
-                            <div class="sheet-visual-row d-flex justify-content-between">
-                                <span>Supplier Beta</span><span>₹46 / unit</span><span>05 Days</span><span class="badge bg-danger-light text-danger py-1">Rejected</span>
+                            <div class="text-end">
+                                <span class="small text-muted d-block font-monospace">SUPPLIER B BID</span>
+                                <span class="badge bg-danger-light text-danger py-2"><i class="fa-solid fa-xmark me-1"></i> ₹46 (Rejected)</span>
                             </div>
                         </div>
                     </div>
@@ -660,21 +645,20 @@
                                 <div class="sys-badge bg-purple-light text-purple"><i class="fa-solid fa-chart-line me-2"></i>Analytics</div>
                                 <span class="small text-muted"><i class="fa-solid fa-circle-check text-success"></i> Telegram Alert</span>
                             </div>
-                            <h5 class="text-white mb-2">Corporate MIS & Business Intelligence (ऑटोमैटिक रिपोर्ट्स और मुनाफे का लाइव ग्राफ)</h5>
+                            <h5 class="text-primary-color mb-2">Corporate MIS & Business Intelligence</h5>
                             <p class="small text-muted mb-4">
                                 Deep profitability analytics. Consolidate department trackers into automated graphical sheets, and schedule direct Telegram/Slack alerts of critical daily reports.
                             </p>
                         </div>
-                        <!-- High Fidelity Sheet Visual Grid -->
-                        <div class="sheet-visual-grid p-2 mb-2">
-                            <div class="sheet-visual-header d-flex gap-2 justify-content-between align-items-center">
-                                <span class="text-muted">Metrics</span><span class="text-muted">Q1 target</span><span class="text-muted">Current Value</span><span class="text-muted">Growth %</span>
+                        <!-- Corporate profit trend graphic simulator -->
+                        <div class="workflow-visual-box p-3 d-flex justify-content-between align-items-center">
+                            <div>
+                                <span class="small text-muted d-block font-monospace">NET EBITDA TARGET</span>
+                                <span class="h6 mb-0 text-success"><i class="fa-solid fa-arrow-trend-up me-1"></i>+18.2% Profit Growth</span>
                             </div>
-                            <div class="sheet-visual-row d-flex justify-content-between">
-                                <span>Net Margin</span><span>₹15 Lakhs</span><span class="text-success fw-bold">₹18 Lakhs</span><span class="text-success fw-bold">+18.2%</span>
-                            </div>
-                            <div class="sheet-visual-row d-flex justify-content-between">
-                                <span>Operating Cost</span><span>₹8.5 Lakhs</span><span class="text-danger fw-bold">₹9.1 Lakhs</span><span class="text-danger fw-bold">-2.4%</span>
+                            <div class="text-end">
+                                <span class="small text-muted d-block font-monospace">TELEGRAM MIS ALERTS</span>
+                                <span class="badge bg-secondary-light text-blue py-2"><i class="fa-solid fa-bell me-1"></i> Active Hook</span>
                             </div>
                         </div>
                     </div>
@@ -1194,3 +1178,860 @@
     <script src="script.js"></script>
 </body>
 </html>
+```
+
+---
+
+### फ़ाइल 2: `style.css` (इसे पूरा कॉपी करें और अपनी फ़ाइल में पेस्ट करें)
+```css
+/* Color Palette Settings & Variables (Brand Orange & Slate matching Logo) */
+:root {
+    --primary: #0F172A;
+    --secondary: #F97316;       /* Vibrant Brand Orange from logo */
+    --accent: #F59E0B;          /* Amber Gold from upward gear bar */
+    --accent-light: rgba(245, 158, 11, 0.12);
+    --secondary-light: rgba(249, 115, 22, 0.12);
+    --text-primary: #1E293B;
+    --text-muted: #64748B;
+    --bg-light: #FFFFFF;
+    --bg-surface: rgba(255, 255, 255, 0.45);
+    --glass-border: rgba(15, 23, 42, 0.08);
+    --bg-body: #FAFAFC;
+    --card-shadow: 0 10px 30px -10px rgba(15, 23, 42, 0.05);
+    --btn-shadow: 0 4px 14px 0 rgba(249, 115, 22, 0.25);
+    --transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+[data-theme="dark"] {
+    --primary: #F8FAFC;
+    --secondary: #FB923C;       /* Light Orange for dark mode */
+    --accent: #FBBF24;          /* Soft Gold for dark mode */
+    --accent-light: rgba(251, 191, 36, 0.15);
+    --secondary-light: rgba(251, 146, 60, 0.15);
+    --text-primary: #E2E8F0;
+    --text-muted: #94A3B8;
+    --bg-light: #0F172A;
+    --bg-surface: rgba(15, 23, 42, 0.55);
+    --glass-border: rgba(248, 250, 252, 0.08);
+    --bg-body: #090D16;
+    --card-shadow: 0 10px 35px -10px rgba(0, 0, 0, 0.45);
+    --btn-shadow: 0 4px 14px 0 rgba(251, 146, 60, 0.3);
+}
+
+/* Global Typography & System Overrides */
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-primary);
+    background-color: var(--bg-body);
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
+}
+
+.bg-cyan { background-color: var(--accent); }
+.text-accent { color: var(--accent) !important; }
+.text-blue { color: var(--secondary) !important; }
+.text-primary-color { color: var(--text-primary); }
+
+.py-6 {
+    padding-top: 5.5rem;
+    padding-bottom: 5.5rem;
+}
+
+/* Glassmorphism Styling System */
+.glass-card {
+    background: var(--bg-surface);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
+    box-shadow: var(--card-shadow);
+    transition: var(--transition);
+}
+
+.border-bottom-glass {
+    border-bottom: 1px solid var(--glass-border);
+}
+
+/* Custom Gradient Typography (Matching Brand Orange) */
+.gradient-text {
+    background: linear-gradient(135deg, var(--secondary), var(--accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+}
+
+/* Announcement Strip */
+.top-banner {
+    background: linear-gradient(90deg, #0F172A, #1E293B);
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Structural Header Navigation */
+.navbar {
+    background: var(--bg-surface);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--glass-border);
+    padding: 0.6rem 0;
+    transition: var(--transition);
+}
+
+/* Official Logo Styling */
+.brand-logo-img {
+    max-height: 48px;
+    width: auto;
+    object-fit: contain;
+    transition: var(--transition);
+}
+
+.navbar-brand:hover .brand-logo-img {
+    transform: scale(1.03);
+}
+
+.nav-link {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--text-muted) !important;
+    padding: 0.5rem 1rem !important;
+    transition: var(--transition);
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--secondary) !important;
+}
+
+/* Theme Switching Button */
+.btn-theme-toggle {
+    background: var(--secondary-light);
+    border: none;
+    color: var(--secondary);
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.btn-theme-toggle:hover {
+    transform: scale(1.05);
+}
+
+/* Custom Design Buttons */
+.btn-primary-custom {
+    background: linear-gradient(135deg, var(--secondary), #EA580C);
+    color: #FFFFFF !important;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.875rem;
+    padding: 0.7rem 1.4rem;
+    box-shadow: var(--btn-shadow);
+    transition: var(--transition);
+}
+
+.btn-primary-custom:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px 0 rgba(249, 115, 22, 0.4);
+}
+
+.btn-secondary-custom {
+    background: transparent;
+    color: var(--text-primary) !important;
+    border: 1px solid var(--glass-border);
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.875rem;
+    padding: 0.7rem 1.4rem;
+    transition: var(--transition);
+}
+
+.btn-secondary-custom:hover {
+    background: var(--secondary-light);
+    color: var(--secondary) !important;
+    border-color: var(--secondary);
+}
+
+/* Hero Section Layout */
+.hero-section {
+    position: relative;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    min-height: calc(100vh - 120px);
+}
+
+.subtitle-badge {
+    background: var(--secondary-light);
+    color: var(--secondary);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 0.45rem 0.9rem;
+    border-radius: 50px;
+    border: 1px solid rgba(249, 115, 22, 0.15);
+}
+
+.hero-title {
+    font-size: 3rem;
+    line-height: 1.15;
+    letter-spacing: -1px;
+    margin-bottom: 1.5rem;
+    color: var(--text-primary);
+}
+
+.hero-desc {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: var(--text-muted);
+}
+
+/* Embedded Core Dashboard UI Illustration */
+.hero-dashboard-preview {
+    background: var(--bg-surface);
+    backdrop-filter: blur(16px);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--card-shadow);
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 1.5rem;
+    position: relative;
+}
+
+.dashboard-header {
+    border-bottom: 1px solid var(--glass-border);
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.dot {
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+}
+.dot.red { background-color: #EF4444; }
+.dot.yellow { background-color: #F59E0B; }
+.dot.green { background-color: #10B981; }
+
+.stat-mini-card {
+    background: var(--bg-body);
+    border: 1px solid var(--glass-border);
+    border-radius: 12px;
+}
+
+.progress-bar-micro {
+    height: 5px;
+    border-radius: 50px;
+}
+
+/* Stats Counter Grid Layout */
+.counter-container {
+    border-top: 1px solid var(--glass-border);
+    padding-top: 3.5rem;
+}
+
+.counter-card {
+    transition: var(--transition);
+}
+
+/* Corrected size & alignment symmetry classes */
+.counter-num, .counter-num-static {
+    font-size: 2.6rem;
+    font-weight: 800;
+    letter-spacing: -1px;
+    display: inline-block;
+}
+
+.plus {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--accent);
+    margin-left: 1px;
+}
+
+.counter-lbl {
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.1px;
+}
+
+/* Profile Framing Architecture */
+.founder-image-wrapper {
+    position: relative;
+    max-width: 380px;
+    margin: 0 auto;
+}
+
+.founder-glow-effect {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: 10px;
+    bottom: 10px;
+    background: linear-gradient(135deg, var(--secondary), var(--accent));
+    border-radius: 24px;
+    filter: blur(20px);
+    opacity: 0.12;
+    z-index: 1;
+    transition: var(--transition);
+}
+
+.founder-image-frame {
+    position: relative;
+    z-index: 2;
+    border-radius: 18px;
+    overflow: hidden;
+    background: var(--bg-surface);
+    border: 4px solid var(--bg-surface);
+    box-shadow: var(--card-shadow);
+    transition: var(--transition);
+    aspect-ratio: 1 / 1;
+}
+
+.founder-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+    transition: var(--transition);
+}
+
+.founder-quick-tag {
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    right: 12px;
+    background: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 0.75rem;
+}
+
+.founder-image-wrapper:hover .founder-glow-effect {
+    opacity: 0.22;
+    transform: scale(1.02);
+}
+
+.founder-image-wrapper:hover .founder-image-frame {
+    transform: translateY(-6px);
+    border-color: var(--accent);
+}
+
+.founder-image-wrapper:hover .founder-img {
+    transform: scale(1.03);
+}
+
+/* Quotes Styling */
+.italic-quote {
+    font-style: italic;
+    line-height: 1.6;
+    border-left: 3px solid var(--accent);
+    padding-left: 1rem;
+}
+
+.bg-custom-pill {
+    background-color: var(--secondary-light);
+    color: var(--secondary);
+    font-weight: 600;
+    font-size: 0.75rem;
+    padding: 0.35rem 0.75rem;
+    border: 1px solid rgba(249, 115, 22, 0.15);
+}
+
+/* Corporate Service Card Formats */
+.service-card {
+    background: var(--bg-surface);
+    backdrop-filter: blur(12px);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
+    box-shadow: var(--card-shadow);
+    transition: var(--transition);
+    height: 100%;
+}
+
+.service-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--accent);
+    box-shadow: 0 16px 30px -8px rgba(245, 158, 11, 0.15);
+}
+
+.icon-box {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: 1.4rem;
+}
+
+.bg-blue-light { background: var(--secondary-light); }
+.bg-cyan-light { background: var(--accent-light); }
+.bg-green-light { background: rgba(16, 185, 129, 0.08); }
+.bg-danger-light { background: rgba(239, 68, 68, 0.08); }
+.bg-warning-light { background: rgba(245, 158, 11, 0.08); }
+.bg-primary-light { background: rgba(15, 23, 42, 0.04); }
+.bg-success-light { background: rgba(37, 211, 102, 0.08); }
+.bg-purple-light { background: rgba(139, 92, 246, 0.08); }
+
+.text-success { color: #10B981 !important; }
+.text-danger { color: #EF4444 !important; }
+.text-warning { color: #F59E0B !important; }
+.text-purple { color: #8B5CF6 !important; }
+
+/* Grid Alignments */
+.col-lg-2-4 {
+    flex: 0 0 auto;
+    width: 20%;
+}
+
+@media (max-width: 992px) {
+    .col-lg-2-4 { width: 33.333%; }
+}
+
+@media (max-width: 576px) {
+    .col-lg-2-4 { width: 50%; }
+}
+
+.industry-badge {
+    background: var(--bg-surface);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border);
+    border-radius: 12px;
+    padding: 1.4rem 0.75rem;
+    box-shadow: var(--card-shadow);
+    transition: var(--transition);
+}
+
+.industry-badge i {
+    font-size: 1.6rem;
+    color: var(--secondary);
+    transition: var(--transition);
+}
+
+.industry-badge:hover {
+    background: var(--secondary-light);
+    border-color: var(--secondary);
+    transform: translateY(-4px);
+}
+
+.industry-badge:hover i {
+    color: var(--accent);
+}
+
+.industry-badge h6 {
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+    color: var(--text-primary);
+}
+
+/* Strategic Chart Layouts */
+.border-left-accent {
+    border-left: 3px solid var(--accent);
+    background: var(--bg-surface);
+    border-radius: 4px 12px 12px 4px;
+    transition: var(--transition);
+}
+
+.border-left-accent:hover {
+    transform: translateX(3px);
+    border-left-color: var(--secondary);
+}
+
+.bg-light-gradient {
+    background: linear-gradient(180deg, var(--bg-body) 0%, var(--bg-light) 100%);
+    border-top: 1px solid var(--glass-border);
+    border-bottom: 1px solid var(--glass-border);
+}
+
+/* Side benefits */
+.border-bottom-title {
+    font-size: 1.15rem;
+    border-bottom: 2px solid var(--glass-border);
+    padding-bottom: 0.5rem;
+}
+
+.round-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+/* Case Study Testimonial Modules */
+.client-portfolio-section {
+    border-bottom: 1px solid var(--glass-border);
+}
+
+.testimonial-card {
+    background: var(--bg-surface);
+    backdrop-filter: blur(12px);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
+    box-shadow: var(--card-shadow);
+    transition: var(--transition);
+    height: 100%;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--secondary);
+}
+
+.stars i { font-size: 0.8rem; }
+
+.testimonial-text {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    font-style: italic;
+}
+
+.testimonial-footer {
+    border-top: 1px solid var(--glass-border) !important;
+}
+
+.mini-brand-img {
+    height: 24px;
+    width: auto;
+    object-fit: contain;
+    border-radius: 4px;
+}
+
+.company-badge-logo {
+    background: var(--bg-body);
+    border: 1px solid var(--glass-border);
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    transition: var(--transition);
+}
+
+.testimonial-card:hover .company-badge-logo {
+    border-color: var(--secondary);
+    background: var(--secondary-light);
+}
+
+.company-text-label {
+    font-size: 0.68rem; 
+    color: var(--text-primary);
+    letter-spacing: 0.2px;
+}
+
+/* Brand Grid Custom Alignment (Full Color Configuration) */
+.logo-grid-card {
+    background: var(--bg-surface);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid var(--glass-border);
+    border-radius: 12px;
+    padding: 1rem 0.75rem;
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--card-shadow);
+    transition: var(--transition);
+}
+
+/* Grayscale completely removed - full opacity */
+.client-grid-logo {
+    max-height: 52px;
+    max-width: 100%;
+    object-fit: contain;
+    filter: none !important;
+    opacity: 1 !important;
+    transition: var(--transition);
+}
+
+.logo-grid-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--secondary);
+    background: var(--bg-light);
+    box-shadow: 0 15px 30px -8px rgba(249, 115, 22, 0.25);
+}
+
+.logo-grid-card:hover .client-grid-logo {
+    transform: scale(1.05);
+}
+
+[data-theme="dark"] .logo-grid-card {
+    background: rgba(15, 23, 42, 0.4);
+}
+
+/* ==========================================================================
+   DYNAMIC ENTERPRISE SYSTEMS PORTFOLIO ("WHAT WE DO") - FIXED DARK BG & TEXT CONTRAST
+   ========================================================================== */
+.system-showcase-section {
+    background-color: #FAFAFC !important; /* Forces slate dark background permanently */
+    color: var(--text-primary) !important;
+}
+
+/* Force cards to always remain dark-slate with bright text in light or dark mode */
+.system-showcase-card {
+    background: #FFFFFF !important; /* Elegant white background to match standard sections */
+    border: 1px solid rgba(15, 23, 42, 0.08) !important;
+    border-radius: 16px !important;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.03) !important;
+    transition: var(--transition) !important;
+    color: var(--text-primary) !important;
+    height: 100%;
+}
+
+.system-showcase-card h5,
+.system-showcase-card h4 {
+    color: var(--primary) !important; /* Force bright black headings */
+    font-weight: 700 !important;
+}
+
+.system-showcase-card p.small,
+.system-showcase-card p {
+    color: var(--text-muted) !important; /* Forces highly readable muted text */
+    line-height: 1.6 !important;
+}
+
+.sys-badge {
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 0.35rem 0.75rem;
+    border-radius: 6px;
+    letter-spacing: 0.5px;
+}
+
+/* Upgraded visual workflow graphic blocks (Highly Attractive & Easy to understand) */
+.workflow-visual-box {
+    background: #FAFAFC !important;
+    border: 1px solid rgba(15, 23, 42, 0.08) !important;
+    border-radius: 12px !important;
+    margin-top: 1rem !important;
+    transition: var(--transition) !important;
+}
+
+.visual-icon-circle {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+/* Simulated visual progress bar */
+.progress-bar-container {
+    width: 100%;
+}
+
+.progress-label {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    margin-bottom: 0.25rem;
+}
+
+.progress-track {
+    width: 100%;
+    height: 8px;
+    background: rgba(15, 23, 42, 0.06);
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--secondary), var(--accent));
+    border-radius: 50px;
+    transition: width 1s ease-in-out;
+}
+
+/* Pipeline badge tags connection indicator */
+.pipeline-flow-wrapper {
+    width: 100%;
+}
+
+/* Dynamic WhatsApp simulation bubble styles */
+.whatsapp-bubble {
+    background: #E8F5E9 !important; /* Light green WhatsApp bubble */
+    border: 1px solid #C8E6C9 !important;
+    border-radius: 8px !important;
+}
+
+/* Excel Spreadsheet Table Simulation Styles (Cleaned up for Light background) */
+.sheet-visual-grid {
+    background: #FFFFFF !important; /* Clean Google sheet light theme */
+    border: 1px solid rgba(15, 23, 42, 0.12) !important;
+    border-radius: 8px !important;
+    font-family: 'Inter', monospace !important;
+    font-size: 0.75rem !important;
+    color: var(--text-muted) !important;
+    margin-top: 1rem !important;
+    overflow: hidden;
+}
+
+.sheet-visual-header {
+    background: #FAFAFC !important; /* Google sheet column header bar color */
+    border-bottom: 2px solid rgba(15, 23, 42, 0.15) !important;
+    padding: 0.5rem 0.75rem !important;
+    font-weight: 700 !important;
+    color: var(--text-primary) !important;
+}
+
+.sheet-visual-row {
+    border-bottom: 1px solid rgba(15, 23, 42, 0.08) !important;
+    padding: 0.5rem 0.75rem !important;
+    background: #FFFFFF !important;
+}
+
+.sheet-visual-row span {
+    color: var(--text-primary) !important;
+}
+
+/* Hover transitions with glowing border */
+.system-showcase-card:hover {
+    transform: translateY(-8px) !important;
+    border-color: var(--secondary) !important;
+    box-shadow: 0 15px 35px -8px rgba(249, 115, 22, 0.25) !important;
+}
+
+.system-showcase-card:hover .workflow-visual-box {
+    border-color: rgba(249, 115, 22, 0.2) !important;
+    background: #FFFFFF !important;
+}
+
+/* ==========================================================================
+   PREMIUM REDESIGNED FOOTER SECTION with COMPLETE High-Contrast overrides
+   ========================================================================== */
+.footer-section {
+    background-color: #0B0F19 !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* High contrast elements under Footer columns */
+.footer-section h5, 
+.footer-section h6 {
+    color: #FFFFFF !important;
+    font-weight: 700;
+}
+
+/* Forces light, crisp slate white text on both left & right columns */
+footer.footer-section,
+.footer-section,
+footer.footer-section p,
+footer.footer-section span,
+footer.footer-section div,
+footer.footer-section p.text-muted,
+footer.footer-section .text-muted,
+footer.footer-section .footer-contact-info span,
+footer.footer-section p.small {
+    color: #E2E8F0 !important; 
+    line-height: 1.7 !important;
+}
+
+.footer-section strong {
+    color: #FFFFFF !important;
+}
+
+.footer-links li {
+    margin-bottom: 0.75rem;
+}
+
+.footer-links a {
+    color: #94A3B8 !important;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.footer-links a:hover {
+    color: var(--secondary) !important;
+    padding-left: 4px;
+}
+
+.social-icons a {
+    background: rgba(255, 255, 255, 0.04) !important;
+    color: #F1F5F9 !important;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    transition: var(--transition);
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+}
+
+.social-icons a:hover {
+    background: var(--secondary) !important;
+    color: white !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(249, 115, 22, 0.3);
+    border-color: var(--secondary) !important;
+}
+
+.footer-bottom {
+    font-size: 0.85rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+.footer-bottom p,
+.footer-bottom-links a {
+    color: #64748B !important;
+}
+
+.footer-bottom-links a {
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.footer-bottom-links a:hover {
+    color: var(--secondary) !important;
+}
+
+/* Floating WhatsApp Link */
+.floating-whatsapp {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: #25D366;
+    color: white;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.7rem;
+    box-shadow: 0 6px 18px rgba(37, 211, 102, 0.3);
+    z-index: 1000;
+    transition: var(--transition);
+}
+
+.floating-whatsapp:hover {
+    transform: scale(1.1);
+    color: white;
+}
+
+/* Responsive Scaling Overrides */
+@media (max-width: 991px) {
+    .hero-title { font-size: 2.35rem; }
+    .py-6 {
+        padding-top: 3.5rem;
+        padding-bottom: 3.5rem;
+    }
+}
