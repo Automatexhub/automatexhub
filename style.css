@@ -1,10 +1,10 @@
-/* Color Palette Settings & Variables */
+/* Color Palette Settings & Variables (Brand Orange & Slate matching Logo) */
 :root {
     --primary: #0F172A;
-    --secondary: #2563EB;
-    --accent: #06B6D4;
-    --accent-light: rgba(6, 182, 212, 0.1);
-    --secondary-light: rgba(37, 99, 235, 0.1);
+    --secondary: #F97316;       /* Vibrant Brand Orange from logo */
+    --accent: #F59E0B;          /* Amber Gold from upward gear bar */
+    --accent-light: rgba(245, 158, 11, 0.12);
+    --secondary-light: rgba(249, 115, 22, 0.12);
     --text-primary: #1E293B;
     --text-muted: #64748B;
     --bg-light: #FFFFFF;
@@ -12,16 +12,16 @@
     --glass-border: rgba(15, 23, 42, 0.08);
     --bg-body: #FAFAFC;
     --card-shadow: 0 10px 30px -10px rgba(15, 23, 42, 0.05);
-    --btn-shadow: 0 4px 14px 0 rgba(37, 99, 235, 0.2);
+    --btn-shadow: 0 4px 14px 0 rgba(249, 115, 22, 0.25);
     --transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 [data-theme="dark"] {
     --primary: #F8FAFC;
-    --secondary: #3B82F6;
-    --accent: #22D3EE;
-    --accent-light: rgba(34, 211, 238, 0.15);
-    --secondary-light: rgba(59, 130, 246, 0.15);
+    --secondary: #FB923C;       /* Light Orange for dark mode */
+    --accent: #FBBF24;          /* Soft Gold for dark mode */
+    --accent-light: rgba(251, 191, 36, 0.15);
+    --secondary-light: rgba(251, 146, 60, 0.15);
     --text-primary: #E2E8F0;
     --text-muted: #94A3B8;
     --bg-light: #0F172A;
@@ -29,7 +29,7 @@
     --glass-border: rgba(248, 250, 252, 0.08);
     --bg-body: #090D16;
     --card-shadow: 0 10px 35px -10px rgba(0, 0, 0, 0.45);
-    --btn-shadow: 0 4px 14px 0 rgba(59, 130, 246, 0.3);
+    --btn-shadow: 0 4px 14px 0 rgba(251, 146, 60, 0.3);
 }
 
 /* Global Typography & System Overrides */
@@ -72,7 +72,7 @@ h1, h2, h3, h4, h5, h6 {
     border-bottom: 1px solid var(--glass-border);
 }
 
-/* Custom Gradient Typography */
+/* Custom Gradient Typography (Matching Brand Orange) */
 .gradient-text {
     background: linear-gradient(135deg, var(--secondary), var(--accent));
     -webkit-background-clip: text;
@@ -95,20 +95,20 @@ h1, h2, h3, h4, h5, h6 {
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--glass-border);
-    padding: 0.8rem 0;
+    padding: 0.6rem 0;
     transition: var(--transition);
 }
 
 /* Official Logo Styling */
 .brand-logo-img {
-    max-height: 46px;
+    max-height: 48px;
     width: auto;
     object-fit: contain;
     transition: var(--transition);
 }
 
 .navbar-brand:hover .brand-logo-img {
-    transform: scale(1.02);
+    transform: scale(1.03);
 }
 
 .nav-link {
@@ -144,7 +144,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Custom Design Buttons */
 .btn-primary-custom {
-    background: linear-gradient(135deg, var(--secondary), #1D4ED8);
+    background: linear-gradient(135deg, var(--secondary), #EA580C);
     color: #FFFFFF !important;
     border: none;
     border-radius: 8px;
@@ -157,7 +157,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn-primary-custom:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 18px 0 rgba(37, 99, 235, 0.3);
+    box-shadow: 0 6px 18px 0 rgba(249, 115, 22, 0.4);
 }
 
 .btn-secondary-custom {
@@ -193,7 +193,7 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: 1px;
     padding: 0.45rem 0.9rem;
     border-radius: 50px;
-    border: 1px solid rgba(37, 99, 235, 0.12);
+    border: 1px solid rgba(249, 115, 22, 0.15);
 }
 
 .hero-title {
@@ -362,7 +362,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
     font-size: 0.75rem;
     padding: 0.35rem 0.75rem;
-    border: 1px solid rgba(37, 99, 235, 0.08);
+    border: 1px solid rgba(249, 115, 22, 0.15);
 }
 
 /* Corporate Service Card Formats */
@@ -379,7 +379,7 @@ h1, h2, h3, h4, h5, h6 {
 .service-card:hover {
     transform: translateY(-6px);
     border-color: var(--accent);
-    box-shadow: 0 16px 30px -8px rgba(6, 182, 212, 0.12);
+    box-shadow: 0 16px 30px -8px rgba(245, 158, 11, 0.15);
 }
 
 .icon-box {
@@ -564,22 +564,21 @@ h1, h2, h3, h4, h5, h6 {
     transition: var(--transition);
 }
 
-/* Updated: No grayscale, full opacity always, glow shadow on hover */
+/* Grayscale completely removed - full opacity */
 .client-grid-logo {
     max-height: 52px;
     max-width: 100%;
     object-fit: contain;
-    filter: none !important; /* Grayscale completely removed */
-    opacity: 1 !important;     /* Full opacity by default */
+    filter: none !important;
+    opacity: 1 !important;
     transition: var(--transition);
 }
 
 .logo-grid-card:hover {
     transform: translateY(-5px);
-    border-color: var(--accent);
+    border-color: var(--secondary);
     background: var(--bg-light);
-    /* 3D deep glow shadow on hover */
-    box-shadow: 0 15px 30px -8px rgba(6, 182, 212, 0.25);
+    box-shadow: 0 15px 30px -8px rgba(249, 115, 22, 0.25);
 }
 
 .logo-grid-card:hover .client-grid-logo {
@@ -607,45 +606,59 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--text-primary);
 }
 
-/* Footer Section Grid */
+/* Premium Redesigned Footer Section */
 .footer-section {
     background-color: #0B0F19;
     border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .footer-links li {
-    margin-bottom: 0.6rem;
+    margin-bottom: 0.75rem;
 }
 
 .footer-links a {
-    color: #64748B !important;
+    color: #94A3B8 !important;
     text-decoration: none;
     transition: var(--transition);
 }
 
 .footer-links a:hover {
-    color: var(--accent) !important;
-    padding-left: 2px;
+    color: var(--secondary) !important;
+    padding-left: 4px;
 }
 
 .social-icons a {
     background: rgba(255, 255, 255, 0.02);
     color: #94A3B8;
-    width: 34px;
-    height: 34px;
+    width: 38px;
+    height: 38px;
     border-radius: 50%;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    margin-right: 8px;
+    margin-right: 10px;
     transition: var(--transition);
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .social-icons a:hover {
     background: var(--secondary);
     color: white;
     transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(249, 115, 22, 0.3);
+}
+
+.footer-bottom {
+    font-size: 0.85rem;
+}
+
+.footer-bottom-links a {
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.footer-bottom-links a:hover {
+    color: var(--secondary) !important;
 }
 
 /* Floating WhatsApp Link */
