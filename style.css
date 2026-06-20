@@ -591,10 +591,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ==========================================================================
-   DYNAMIC ENTERPRISE SYSTEMS PORTFOLIO ("WHAT WE DO") - FIXED DARK BG & TEXT CONTRAST
+   DYNAMIC ENTERPRISE SYSTEMS PORTFOLIO ("WHAT WE DO") - FORCED DARK BG & TEXT CONTRAST
    ========================================================================== */
 .system-showcase-section {
-    background-color: #0F172A !important; /* Force slate dark background permanently */
+    background-color: #0F172A !important; /* Forces slate dark background permanently */
     color: #F8FAFC !important;
 }
 
@@ -629,34 +629,118 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: 0.5px;
 }
 
-/* Simulated Tech Google Spreadsheet Visual Grids */
-.sheet-visual-grid {
-    background: #0F172A !important; /* Black background like real sheets */
-    border: 1px solid rgba(255, 255, 255, 0.15) !important;
-    border-radius: 8px !important;
-    font-family: 'Inter', monospace !important;
-    font-size: 0.75rem !important;
-    color: #94A3B8 !important;
+/* ==========================================================================
+   UPGRADED PURE WHITE HIGH-CONTRAST VISUAL MOCKUP BOXES (Spreadsheet & Pipeline)
+   ========================================================================== */
+.workflow-visual-box {
+    background: #FFFFFF !important; /* Pure White background inside dark cards */
+    border: 1px solid rgba(255, 255, 255, 0.9) !important;
+    border-radius: 12px !important;
     margin-top: 1rem !important;
+    padding: 1rem !important;
+    transition: var(--transition) !important;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05) !important;
+}
+
+/* Force inner text of workflow blocks to remain pure dark slate (Super High Contrast) */
+.workflow-visual-box span,
+.workflow-visual-box p,
+.workflow-visual-box label,
+.workflow-visual-box .small,
+.workflow-visual-box .progress-label span {
+    color: #1E293B !important; /* Rich Dark text, fully legible */
+    font-weight: 600 !important;
+}
+
+.workflow-visual-box strong,
+.workflow-visual-box .progress-label strong {
+    color: #0F172A !important; /* Pure Black text for emphasized words */
+    font-weight: 700 !important;
+}
+
+.visual-icon-circle {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+/* Simulated visual progress bar (Light Slate Track with Orange Fill) */
+.progress-bar-container {
+    width: 100%;
+}
+
+.progress-label {
+    font-size: 0.75rem;
+    margin-bottom: 0.25rem;
+}
+
+.progress-track {
+    width: 100%;
+    height: 8px;
+    background: #E2E8F0 !important; /* Crisp light grey track */
+    border-radius: 50px;
     overflow: hidden;
 }
 
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #F97316, #F59E0B) !important; /* Brand Orange Fill */
+    border-radius: 50px;
+}
+
+/* Simulated Tech Google Spreadsheet Visual Grids */
+.sheet-visual-grid {
+    background: #FFFFFF !important; /* Pure White sheet grid */
+    border: 1px solid #CBD5E1 !important;
+    border-radius: 8px !important;
+    font-family: 'Inter', monospace !important;
+    font-size: 0.75rem !important;
+    color: #475569 !important;
+    margin-top: 1rem !important;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05) !important;
+}
+
 .sheet-visual-header {
-    background: #1E293B !important; /* Excel grey header row */
-    border-bottom: 2px solid rgba(255, 255, 255, 0.2) !important;
+    background: #F1F5F9 !important; /* Cool grey column header row */
+    border-bottom: 2px solid #CBD5E1 !important;
     padding: 0.5rem 0.75rem !important;
     font-weight: 700 !important;
-    color: #F8FAFC !important;
+    color: #0F172A !important; /* Dark bold header text */
+}
+
+.sheet-visual-header span {
+    color: #0F172A !important;
 }
 
 .sheet-visual-row {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+    border-bottom: 1px solid #E2E8F0 !important;
     padding: 0.5rem 0.75rem !important;
-    background: #0F172A !important;
+    background: #FFFFFF !important;
 }
 
 .sheet-visual-row span {
-    color: #CBD5E1 !important;
+    color: #334155 !important; /* Legible Slate Text */
+}
+
+/* Dynamic WhatsApp simulation bubble styles */
+.whatsapp-bubble {
+    background: #E8F5E9 !important; /* Official WhatsApp light green bubble */
+    border: 1px solid #C8E6C9 !important;
+    border-radius: 8px !important;
+}
+
+.whatsapp-bubble span {
+    color: #1B5E20 !important; /* Dark green message text */
+    font-weight: 600 !important;
+}
+
+.whatsapp-bubble i {
+    color: #25D366 !important; /* Bright green check icon */
 }
 
 /* Hover transitions with glowing border */
@@ -666,9 +750,9 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0 15px 35px -8px rgba(249, 115, 22, 0.35) !important;
 }
 
-.system-showcase-card:hover .sheet-visual-grid {
+.system-showcase-card:hover .workflow-visual-box {
     border-color: rgba(249, 115, 22, 0.35) !important;
-    background: #0F172A !important;
+    background: #FFFFFF !important;
 }
 
 /* ==========================================================================
