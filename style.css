@@ -1,4 +1,4 @@
-* Color Palette Settings & Variables (Brand Orange & Slate matching Logo) */
+/* Color Palette Settings & Variables (Brand Orange & Slate matching Logo) */
 :root {
     --primary: #0F172A;
     --secondary: #F97316;       /* Vibrant Brand Orange from logo */
@@ -628,33 +628,33 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ==========================================================================
-   DYNAMIC ENTERPRISE SYSTEMS PORTFOLIO ("WHAT WE DO") - FIXED DARK BG & TEXT CONTRAST
+   DYNAMIC ENTERPRISE SYSTEMS PORTFOLIO ("WHAT WE DO") - FORCED LIGHT THEME
    ========================================================================== */
 .system-showcase-section {
-    background-color: #0F172A !important; /* Forces slate dark background permanently */
-    color: #F8FAFC !important;
+    background-color: #FAFAFC !important; /* Unified Light Background */
+    color: var(--text-primary) !important;
 }
 
-/* Force cards to always remain dark-slate with bright text in light or dark mode */
+/* Force cards to always remain crisp pure white in light mode */
 .system-showcase-card {
-    background: #1E293B !important; /* Elegant dark-blue slate background */
-    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    background: #FFFFFF !important; /* Pure White background */
+    border: 1px solid rgba(15, 23, 42, 0.08) !important;
     border-radius: 16px !important;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2) !important;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.03) !important;
     transition: var(--transition) !important;
-    color: #F8FAFC !important;
+    color: var(--text-primary) !important;
     height: 100%;
 }
 
 .system-showcase-card h5,
 .system-showcase-card h4 {
-    color: #FFFFFF !important; /* Force bright white headings */
+    color: var(--primary) !important; /* Rich Dark Slate for headings */
     font-weight: 700 !important;
 }
 
 .system-showcase-card p.small,
 .system-showcase-card p {
-    color: #94A3B8 !important; /* Forces highly readable muted text */
+    color: var(--text-muted) !important; /* Forces highly readable muted text */
     line-height: 1.6 !important;
 }
 
@@ -667,16 +667,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ==========================================================================
-   UPGRADED PURE WHITE HIGH-CONTRAST VISUAL MOCKUP BOXES (Spreadsheet & Pipeline)
+   UPGRADED PURE WHITE HIGH-CONTRAST VISUAL MOCKUP BOXES
    ========================================================================== */
 .workflow-visual-box {
-    background: #FFFFFF !important; /* Pure White background inside dark cards */
-    border: 1px solid rgba(255, 255, 255, 0.9) !important;
+    background: #FAFAFC !important; /* Clean light slate inner background */
+    border: 1px solid rgba(15, 23, 42, 0.08) !important;
     border-radius: 12px !important;
     margin-top: 1rem !important;
     padding: 1rem !important;
     transition: var(--transition) !important;
-    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05) !important;
+    box-shadow: inset 0 2px 4px rgba(15, 23, 42, 0.02) !important;
 }
 
 /* Force inner text of workflow blocks to remain pure dark slate (Super High Contrast) */
@@ -784,12 +784,12 @@ h1, h2, h3, h4, h5, h6 {
 .system-showcase-card:hover {
     transform: translateY(-8px) !important;
     border-color: var(--secondary) !important;
-    box-shadow: 0 15px 35px -8px rgba(249, 115, 22, 0.35) !important;
+    box-shadow: 0 15px 35px -8px rgba(249, 115, 22, 0.25) !important;
 }
 
 .system-showcase-card:hover .workflow-visual-box {
     border-color: rgba(249, 115, 22, 0.35) !important;
-    background: #FFFFFF !important;
+    background: #FAFAFC !important;
 }
 
 /* ==========================================================================
