@@ -280,6 +280,43 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: 0.1px;
 }
 
+/* ==========================================================================
+   PURE PULL-FREE INFINITE AUTO-SCROLL MARQUEE LOGOS DESIGN (NEW)
+   ========================================================================== */
+.marquee-section {
+    border-top: 1px solid var(--glass-border);
+    border-bottom: 1px solid var(--glass-border);
+    background: var(--bg-surface) !important;
+}
+
+@keyframes scroll-loop {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+.marquee-wrapper {
+    display: flex;
+    width: 200%;
+    animation: scroll-loop 24s linear infinite;
+}
+
+.marquee-content {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.marquee-content img {
+    height: 42px;
+    width: auto;
+    object-fit: contain;
+    transition: var(--transition);
+}
+
+.marquee-content img:hover {
+    transform: scale(1.05);
+}
+
 /* Profile Framing Architecture */
 .founder-image-wrapper {
     position: relative;
@@ -591,7 +628,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ==========================================================================
-   DYNAMIC ENTERPRISE SYSTEMS PORTFOLIO ("WHAT WE DO") - FORCED DARK BG & TEXT CONTRAST
+   DYNAMIC ENTERPRISE SYSTEMS PORTFOLIO ("WHAT WE DO") - FIXED DARK BG & TEXT CONTRAST
    ========================================================================== */
 .system-showcase-section {
     background-color: #0F172A !important; /* Forces slate dark background permanently */
@@ -868,11 +905,49 @@ footer.footer-section p.small {
     color: white;
 }
 
-/* Responsive Scaling Overrides */
-@media (max-width: 991px) {
-    .hero-title { font-size: 2.35rem; }
+/* ==========================================================================
+   FAIL-SAFE MOBILE RESPONSIVENESS AND SMALL SCREEN ENHANCEMENTS
+   ========================================================================== */
+@media (max-width: 767px) {
+    .hero-title {
+        font-size: 2.1rem !important;
+        line-height: 1.25 !important;
+    }
+    
+    .hero-desc {
+        font-size: 0.95rem !important;
+    }
+    
     .py-6 {
-        padding-top: 3.5rem;
-        padding-bottom: 3.5rem;
+        padding-top: 3.5rem !important;
+        padding-bottom: 3.5rem !important;
+    }
+
+    .counter-num, .counter-num-static {
+        font-size: 2.2rem !important;
+    }
+
+    /* Keep systems cards perfectly balanced on small devices */
+    .system-showcase-card {
+        padding: 1.25rem !important;
+    }
+
+    .workflow-visual-box {
+        padding: 0.75rem !important;
+    }
+
+    /* Auto marquee speeds adjustment for mobile devices */
+    .marquee-wrapper {
+        animation-duration: 15s !important;
+    }
+
+    /* Prevent mobile menu overlaps */
+    .navbar-collapse {
+        background: var(--bg-surface);
+        backdrop-filter: blur(16px);
+        padding: 1rem;
+        border-radius: 12px;
+        margin-top: 0.5rem;
+        border: 1px solid var(--glass-border);
     }
 }
