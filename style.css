@@ -261,7 +261,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Corrected size & alignment symmetry classes */
 .counter-num, .counter-num-static {
-    font-size: 2.8rem;
+    font-size: 2.6rem;
     font-weight: 800;
     letter-spacing: -1px;
     display: inline-block;
@@ -590,33 +590,35 @@ h1, h2, h3, h4, h5, h6 {
     background: rgba(15, 23, 42, 0.4);
 }
 
-/* Inputs & Form Panels */
-.form-control, .form-select {
-    background: var(--bg-body);
-    border: 1px solid var(--glass-border);
-    color: var(--text-primary);
-    border-radius: 8px;
-    padding: 0.7rem 1rem;
-    transition: var(--transition);
-}
-
-.form-control:focus, .form-select:focus {
-    background: var(--bg-light);
-    border-color: var(--secondary);
-    box-shadow: 0 0 0 3px var(--secondary-light);
-    color: var(--text-primary);
-}
-
-/* Dynamic Enterprise Systems Portfolio ("WHAT WE DO") */
+/* ==========================================================================
+   DYNAMIC ENTERPRISE SYSTEMS PORTFOLIO ("WHAT WE DO") - FIXED DARK BG & TEXT CONTRAST
+   ========================================================================== */
 .system-showcase-section {
-    background-color: #0F172A !important; /* Forces slate dark background always on both modes */
+    background-color: #0F172A !important; /* Force slate dark background permanently */
+    color: #F8FAFC !important;
 }
 
+/* Force cards to always remain dark-slate with bright text in light or dark mode */
 .system-showcase-card {
-    background: rgba(255, 255, 255, 0.03) !important;
-    border: 1px solid rgba(255, 255, 255, 0.08) !important;
-    transition: var(--transition);
+    background: #1E293B !important; /* Elegant dark-blue slate background */
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 16px !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2) !important;
+    transition: var(--transition) !important;
+    color: #F8FAFC !important;
     height: 100%;
+}
+
+.system-showcase-card h5,
+.system-showcase-card h4 {
+    color: #FFFFFF !important; /* Force bright white headings */
+    font-weight: 700 !important;
+}
+
+.system-showcase-card p.small,
+.system-showcase-card p {
+    color: #94A3B8 !important; /* Forces highly readable muted text */
+    line-height: 1.6 !important;
 }
 
 .sys-badge {
@@ -629,35 +631,39 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Simulated Tech Google Spreadsheet Visual Grids */
 .sheet-visual-grid {
-    background: #1E293B !important; /* Google sheet dark theme style */
-    border: 1px solid rgba(255, 255, 255, 0.12) !important;
-    border-radius: 8px;
-    font-family: 'Inter', monospace;
-    font-size: 0.75rem;
-    color: #94A3B8;
+    background: #0F172A !important; /* Black background like real sheets */
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    border-radius: 8px !important;
+    font-family: 'Inter', monospace !important;
+    font-size: 0.75rem !important;
+    color: #94A3B8 !important;
+    margin-top: 1rem !important;
+    overflow: hidden;
 }
 
 .sheet-visual-header {
-    background: #0F172A !important;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.15) !important;
-    padding: 0.4rem 0.6rem;
-    font-weight: 700;
-    border-radius: 6px 6px 0 0;
+    background: #1E293B !important; /* Excel grey header row */
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2) !important;
+    padding: 0.5rem 0.75rem !important;
+    font-weight: 700 !important;
+    color: #F8FAFC !important;
 }
 
 .sheet-visual-row {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-    padding: 0.45rem 0.6rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+    padding: 0.5rem 0.75rem !important;
+    background: #0F172A !important;
 }
 
-.sheet-visual-row:last-child {
-    border-bottom: none;
+.sheet-visual-row span {
+    color: #CBD5E1 !important;
 }
 
+/* Hover transitions with glowing border */
 .system-showcase-card:hover {
-    transform: translateY(-8px);
+    transform: translateY(-8px) !important;
     border-color: var(--secondary) !important;
-    box-shadow: 0 15px 35px -8px rgba(249, 115, 22, 0.18) !important;
+    box-shadow: 0 15px 35px -8px rgba(249, 115, 22, 0.35) !important;
 }
 
 .system-showcase-card:hover .sheet-visual-grid {
@@ -665,7 +671,9 @@ h1, h2, h3, h4, h5, h6 {
     background: #0F172A !important;
 }
 
-/* Premium Redesigned Footer Section with COMPLETE High-Contrast overrides */
+/* ==========================================================================
+   PREMIUM REDESIGNED FOOTER SECTION with COMPLETE High-Contrast overrides
+   ========================================================================== */
 .footer-section {
     background-color: #0B0F19 !important;
     border-top: 1px solid rgba(255, 255, 255, 0.05);
