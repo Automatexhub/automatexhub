@@ -16,8 +16,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
-    <!-- Custom Style Sheet -->
-    <link rel="stylesheet" href="style.css">
+    <!-- Custom Style Sheet (Cache busted to version 3.0 to instantly load new colors) -->
+    <link rel="stylesheet" href="style.css?v=3.0">
 </head>
 <body>
 
@@ -30,7 +30,6 @@
     <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="#">
-                <!-- Path set to Logo.png in root folder -->
                 <img src="Logo.png" alt="Automatexhub Logo" class="brand-logo-img me-2" onerror="this.onerror=null; this.src='https://placehold.co/180x45/0f172a/f97316?text=AUTOMATEXHUB';">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,6 +40,7 @@
                     <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#system-showcase">What We Do</a></li>
                     <li class="nav-item"><a class="nav-link" href="#industries">Industries</a></li>
                     <li class="nav-item"><a class="nav-link" href="#growth">Growth View</a></li>
                     <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
@@ -124,7 +124,7 @@
                 </div>
             </div>
 
-            <!-- Animated Counters Row (24/7 Fixed and Aligned) -->
+            <!-- Animated Counters Row (24/7 Aligned Symmetrically) -->
             <div class="row row-cols-2 row-cols-lg-4 g-4 mt-5 counter-container text-center" data-aos="fade-up">
                 <div class="col">
                     <div class="counter-card p-4">
@@ -156,7 +156,6 @@
                 <div class="col">
                     <div class="counter-card p-4">
                         <div class="d-flex justify-content-center align-items-baseline">
-                            <!-- Beautiful Static 24/7 aligned perfectly with the gradient typography of other numbers -->
                             <h2 class="counter-num-static gradient-text">24/7</h2>
                         </div>
                         <p class="counter-lbl text-muted mb-0">Support Availability</p>
@@ -334,6 +333,268 @@
         </div>
     </section>
 
+    <!-- WHAT WE DO Section (Elite 12-System Portfolio Showcase) -->
+    <section id="system-showcase" class="system-showcase-section py-6 bg-dark-slate text-light">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <span class="text-uppercase tracking-wider subtitle-badge mb-3 d-inline-block">
+                    <i class="fa-solid fa-cubes me-2"></i>WHAT WE DO
+                </span>
+                <h2 class="section-title text-white">Our Specialized Automation & Google Sheets Ecosystem</h2>
+                <p class="text-muted max-width-600 mx-auto">
+                    Explore our comprehensive directory of custom-engineered platforms, Google Workspace integrations, and advanced trackers built to eliminate manual friction.
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <!-- 1. QR Attendance & Payroll -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="50">
+                    <div class="system-showcase-card glass-card p-4 d-flex flex-column justify-content-between h-100">
+                        <div>
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <div class="sys-badge bg-warning-light text-warning"><i class="fa-solid fa-qrcode me-2"></i>Live Track</div>
+                                <span class="small text-muted"><i class="fa-solid fa-circle-check text-success"></i> Apps Script</span>
+                            </div>
+                            <h5 class="text-white mb-2">QR Attendance & Automated Payroll</h5>
+                            <p class="small text-muted mb-4">
+                                Scan QR codes via mobile to mark real-time employee check-ins directly into Google Sheets, instantly calculating monthly salary, PF, ESIC, and generating PDF payslips automatically.
+                            </p>
+                        </div>
+                        <div class="ui-sheet-mockup p-3">
+                            <div class="mock-cell p-2 mb-2">Emp: <strong class="text-warning">ATH-109</strong> | Status: <span class="text-success fw-bold">In-Time</span></div>
+                            <div class="mock-cell p-2">Net Salary Payout: <strong class="text-white">₹44,200</strong></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. Order Management System -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="system-showcase-card glass-card p-4 d-flex flex-column justify-content-between h-100">
+                        <div>
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <div class="sys-badge bg-primary-light text-blue"><i class="fa-solid fa-cart-shopping me-2"></i>Sales</div>
+                                <span class="small text-muted"><i class="fa-solid fa-circle-check text-success"></i> Auto-Manifest</span>
+                            </div>
+                            <h5 class="text-white mb-2">End-to-End Order Management</h5>
+                            <p class="small text-muted mb-4">
+                                Centralize orders from Retail, Whatsapp, and Trading networks. Automatically deplete inventory levels on sale, trigger re-order alerts, and generate delivery challans.
+                            </p>
+                        </div>
+                        <div class="ui-sheet-mockup p-3">
+                            <div class="mock-cell p-2 mb-2 d-flex justify-content-between"><span>Pending: <strong>12</strong></span> <span class="text-danger">Low Stock Alert: <strong>03</strong></span></div>
+                            <div class="mock-cell p-2 text-center text-success">Inventory Status: Synced Successfully</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. Logistics & Trip Management -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150">
+                    <div class="system-showcase-card glass-card p-4 d-flex flex-column justify-content-between h-100">
+                        <div>
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <div class="sys-badge bg-success-light text-success"><i class="fa-solid fa-truck-moving me-2"></i>Logistics</div>
+                                <span class="small text-muted"><i class="fa-solid fa-circle-check text-success"></i> Fleet Control</span>
+                            </div>
+                            <h5 class="text-white mb-2">Trip & Fleet Management Suite</h5>
+                            <p class="small text-muted mb-4">
+                                Track fleet trips, fuel consumption, driver allowances, toll charges, and profit margins per trip. Automate system alerts to dispatch managers when fuel efficiency drops.
+                            </p>
+                        </div>
+                        <div class="ui-sheet-mockup p-3">
+                            <div class="mock-cell p-2 mb-2">Active Trucks: <strong class="text-success">24 / 30</strong></div>
+                            <div class="mock-cell p-2 d-flex justify-content-between"><span>Route: GJ-01 to MH-02</span> <span class="text-warning">Margin: 32%</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. Smart Hospital Management System -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="system-showcase-card glass-card p-4 d-flex flex-column justify-content-between h-100">
+                        <div>
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <div class="sys-badge bg-danger-light text-danger"><i class="fa-solid fa-hospital-user me-2"></i>Healthcare</div>
+                                <span class="small text-muted"><i class="fa-solid fa-circle-check text-success"></i> OPD Scheduler</span>
+                            </div>
+                            <h5 class="text-white mb-2">Hospital Management System</h5>
+                            <p class="small text-muted mb-4">
+                                Track patient OPD registration, automate doctor OPD scheduling queues, coordinate ward occupancy levels, and sync billing sheets dynamically with pharmacy inventory.
+                            </p>
+                        </div>
+                        <div class="ui-sheet-mockup p-3">
+                            <div class="mock-cell p-2 mb-2">Patients Registered Today: <strong class="text-white">142</strong></div>
+                            <div class="mock-cell p-2 text-center text-success">ICU Ward Status: 85% Occupied</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. Government Compliance Tracker -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="250">
+                    <div class="system-showcase-card glass-card p-4 d-flex flex-column justify-content-between h-100">
+                        <div>
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <div class="sys-badge bg-cyan-light text-accent"><i class="fa-solid fa-scale-balanced me-2"></i>Accounts</div>
+                                <span class="small text-muted"><i class="fa-solid fa-circle-check text-success"></i> Auto Auditor</span>
+                            </div>
+                            <h5 class="text-white mb-2">Government Compliance Tracker</h5>
+                            <p class="small text-muted mb-4">
+                                Track accounts dynamically. Verify compliance with government tax laws (GST, TDS limits, corporate filing thresholds) and instantly alerting you of accounting anomalies.
+                            </p>
+                        </div>
+                        <div class="ui-sheet-mockup p-3">
+                            <div class="mock-cell p-2 mb-2">GST Inward Mismatch: <strong class="text-danger">0 Detected</strong></div>
+                            <div class="mock-cell p-2 text-center text-warning"><i class="fa-solid fa-circle-check me-1"></i> Tax Audit Log Verified</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6. Custom Website Development -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="system-showcase-card glass-card p-4 d-flex flex-column justify-content-between h-100">
+                        <div>
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <div class="sys-badge bg-purple-light text-purple"><i class="fa-solid fa-code me-2"></i>Web Tech</div>
+                                <span class="small text-muted"><i class="fa-solid fa-circle-check text-success"></i> Custom Platforms</span>
+                            </div>
+                            <h5 class="text-white mb-2">Premium Corporate Web Dev</h5>
+                            <p class="small text-muted mb-4">
+                                We design and build ultra-premium, modern, high-speed corporate websites, database architectures, client portals, and administrative web apps optimized for mobile.
+                            </p>
+                        </div>
+                        <div class="ui-sheet-mockup p-3">
+                            <div class="row g-2">
+                                <div class="col-4 text-center">Mobile: <strong class="text-success">100%</strong></div>
+                                <div class="col-4 text-center">Speed: <strong class="text-success">A+</strong></div>
+                                <div class="col-4 text-center">SEO: <strong class="text-success">98</strong></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 7. FMCG Sales Force Automation -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="350">
+                    <div class="system-showcase-card glass-card p-4 d-flex flex-column justify-content-between h-100">
+                        <div>
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <div class="sys-badge bg-warning-light text-warning"><i class="fa-solid fa-map-location-dot me-2"></i>FMCG Focus</div>
+                                <span class="small text-muted"><i class="fa-solid fa-circle-check text-success"></i> Route Planner</span>
+                            </div>
+                            <h5 class="text-white mb-2">FMCG Sales Force & Field Booking</h5>
+                            <p class="small text-muted mb-4">
+                                Track field sales team locations, schedule daily dealer routes, and let executives book orders on-site via custom mobile forms synced instantly with dispatch offices.
+                            </p>
+                        </div>
+                        <div class="ui-sheet-mockup p-3">
+                            <div class="mock-cell p-2 mb-2">Dealers Visited Today: <strong class="text-white">48 / 60</strong></div>
+                            <div class="mock-cell p-2 text-center text-success">Total Booked Value: ₹4.8 Lakhs</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 8. Smart Warehouse & Barcoding -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="system-showcase-card glass-card p-4 d-flex flex-column justify-content-between h-100">
+                        <div>
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <div class="sys-badge bg-primary-light text-blue"><i class="fa-solid fa-barcode me-2"></i>Warehousing</div>
+                                <span class="small text-muted"><i class="fa-solid fa-circle-check text-success"></i> Rack Control</span>
+                            </div>
+                            <h5 class="text-white mb-2">Smart Warehouse & Rack Barcoding</h5>
+                            <p class="small text-muted mb-4">
+                                Map inventory to specific rack locations. Generate and print dynamic QR/Barcodes directly from spreadsheet engines to facilitate quick handheld mobile scans.
+                            </p>
+                        </div>
+                        <div class="ui-sheet-mockup p-3">
+                            <div class="mock-cell p-2 mb-2 d-flex justify-content-between"><span>Row-C Rack-04</span> <span class="text-success">Match: 100%</span></div>
+                            <div class="mock-cell p-2 text-center text-warning">Quick Scan Reconciliation Complete</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 9. CRM & Whatsapp Automation Pipeline -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="450">
+                    <div class="system-showcase-card glass-card p-4 d-flex flex-column justify-content-between h-100">
+                        <div>
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <div class="sys-badge bg-success-light text-success"><i class="fa-brands fa-whatsapp me-2"></i>Marketing</div>
+                                <span class="small text-muted"><i class="fa-solid fa-circle-check text-success"></i> WhatsApp API</span>
+                            </div>
+                            <h5 class="text-white mb-2">Custom CRM & WhatsApp Pipeline</h5>
+                            <p class="small text-muted mb-4">
+                                Manage leads across various pipeline stages. Automate scheduled, highly personalized WhatsApp follow-ups, trigger payment reminders, and track agent conversion scores.
+                            </p>
+                        </div>
+                        <div class="ui-sheet-mockup p-3">
+                            <div class="mock-cell p-2 mb-2">Active Pipeline Leads: <strong class="text-white">412</strong></div>
+                            <div class="mock-cell p-2 text-center text-success"><i class="fa-solid fa-paper-plane me-1"></i> Whatsapp Automated Followups: Sent</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 10. Manufacturing ERP & Bill of Materials -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                    <div class="system-showcase-card glass-card p-4 d-flex flex-column justify-content-between h-100">
+                        <div>
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <div class="sys-badge bg-danger-light text-danger"><i class="fa-solid fa-industry me-2"></i>Manufacturing</div>
+                                <span class="small text-muted"><i class="fa-solid fa-circle-check text-success"></i> Costing Engine</span>
+                            </div>
+                            <h5 class="text-white mb-2">Manufacturing ERP & Auto-BOM</h5>
+                            <p class="small text-muted mb-4">
+                                Streamline manufacturing batches. Auto-calculate exact raw material requirements based on Bill of Materials (BOM), track production scrap, and estimate batch profitability.
+                            </p>
+                        </div>
+                        <div class="ui-sheet-mockup p-3">
+                            <div class="mock-cell p-2 mb-2">Raw Material Availability: <strong class="text-success">Available</strong></div>
+                            <div class="mock-cell p-2 text-center text-warning">Batch Cost Margin: Optimized at 28.5%</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 11. RFQ & Vendor Procurement Suite -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="550">
+                    <div class="system-showcase-card glass-card p-4 d-flex flex-column justify-content-between h-100">
+                        <div>
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <div class="sys-badge bg-cyan-light text-accent"><i class="fa-solid fa-cart-flatbed me-2"></i>Procurement</div>
+                                <span class="small text-muted"><i class="fa-solid fa-circle-check text-success"></i> Auto-PO Gen</span>
+                            </div>
+                            <h5 class="text-white mb-2">Automated RFQ & Vendor Bidding</h5>
+                            <p class="small text-muted mb-4">
+                                Send automatic Request for Quotations (RFQs) to supplier portals. Compare raw material rates automatically on submission and generate purchase orders.
+                            </p>
+                        </div>
+                        <div class="ui-sheet-mockup p-3">
+                            <div class="mock-cell p-2 mb-2">Supplier Bids Received: <strong class="text-white">05 / 05</strong></div>
+                            <div class="mock-cell p-2 text-center text-success"><i class="fa-solid fa-check me-1"></i> Best Rate PO Released to Vendor</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 12. Corporate MIS Dashboard & BI Engine -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+                    <div class="system-showcase-card glass-card p-4 d-flex flex-column justify-content-between h-100">
+                        <div>
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <div class="sys-badge bg-purple-light text-purple"><i class="fa-solid fa-chart-line me-2"></i>Analytics</div>
+                                <span class="small text-muted"><i class="fa-solid fa-circle-check text-success"></i> Telegram Alert</span>
+                            </div>
+                            <h5 class="text-white mb-2">Corporate MIS & Business Intelligence</h5>
+                            <p class="small text-muted mb-4">
+                                Deep profitability analytics. Consolidate department trackers into automated graphical sheets, and schedule direct Telegram/Slack alerts of critical daily reports.
+                            </p>
+                        </div>
+                        <div class="ui-sheet-mockup p-3">
+                            <div class="row g-2">
+                                <div class="col-6 text-center">Net Margin: <strong class="text-success">+18%</strong></div>
+                                <div class="col-6 text-center">Scrap Cost: <strong class="text-danger">-2.4%</strong></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Industries We Serve Section -->
     <section id="industries" class="industries-section py-6 bg-light-gradient">
         <div class="container">
@@ -505,7 +766,7 @@
                         <div class="round-icon bg-danger-light"><i class="fa-solid fa-arrow-trend-down text-danger"></i></div>
                         <div>
                             <h6 class="text-primary-color mb-1">Reduce Manual Work & Save Time</h6>
-                            <p class="text-muted small">Minimize structural data entry to redirect focus to core growth areas.</p>
+                            <p class="text-muted small">Minimize data entry workloads to redirect focus to core growth areas.</p>
                         </div>
                     </div>
                     <div class="d-flex align-items-start mb-3 gap-3">
@@ -619,7 +880,7 @@
                 </div>
             </div>
 
-            <!-- Part 2: Corporate Brand Image Grid -->
+            <!-- Part 2: Corporate Brand Image Grid (No Filters / Always Colored) -->
             <div class="client-logos-wrapper mt-5 pt-5 border-top-glass" data-aos="fade-up">
                 <div class="text-center mb-4">
                     <span class="small text-uppercase tracking-wider text-muted fw-bold">Trusted By Leading Brands</span>
@@ -845,3 +1106,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+```
