@@ -16,8 +16,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
-    <!-- Custom Style Sheet (Cache busted to version 3.0 to instantly load new colors) -->
-    <link rel="stylesheet" href="style.css?v=3.0">
+    <!-- Custom Style Sheet (Cache busted to version 4.0 to instantly load new colors and visuals) -->
+    <link rel="stylesheet" href="style.css?v=4.0">
 </head>
 <body>
 
@@ -333,14 +333,14 @@
         </div>
     </section>
 
-    <!-- WHAT WE DO Section (Elite 12-System Portfolio Showcase) -->
+    <!-- WHAT WE DO Section (Elite 12-System Portfolio Showcase with Google Sheets Visual Grids) -->
     <section id="system-showcase" class="system-showcase-section py-6 bg-dark-slate text-light">
         <div class="container">
             <div class="text-center mb-5" data-aos="fade-up">
                 <span class="text-uppercase tracking-wider subtitle-badge mb-3 d-inline-block">
                     <i class="fa-solid fa-cubes me-2"></i>WHAT WE DO
                 </span>
-                <h2 class="section-title text-white">Our Specialized Automation & Google Sheets Ecosystem</h2>
+                <h2 class="section-title text-white">Our Core Automation Systems & Specialized Solutions</h2>
                 <p class="text-muted max-width-600 mx-auto">
                     Explore our comprehensive directory of custom-engineered platforms, Google Workspace integrations, and advanced trackers built to eliminate manual friction.
                 </p>
@@ -355,14 +355,22 @@
                                 <div class="sys-badge bg-warning-light text-warning"><i class="fa-solid fa-qrcode me-2"></i>Live Track</div>
                                 <span class="small text-muted"><i class="fa-solid fa-circle-check text-success"></i> Apps Script</span>
                             </div>
-                            <h5 class="text-white mb-2">QR Attendance & Automated Payroll</h5>
+                            <h5 class="text-white mb-2">QR-Based Attendance & Fully Automated Payroll (QR स्कैनिंग + ऑटोमैटिक सैलरी शीट जनरेटर)</h5>
                             <p class="small text-muted mb-4">
-                                Scan QR codes via mobile to mark real-time employee check-ins directly into Google Sheets, instantly calculating monthly salary, PF, ESIC, and generating PDF payslips automatically.
+                                Scan QR codes via mobile to mark check-ins directly into Google Sheets. Instantly calculates gross salaries, PF/ESIC deductions, and prints automated payslips.
                             </p>
                         </div>
-                        <div class="ui-sheet-mockup p-3">
-                            <div class="mock-cell p-2 mb-2">Emp: <strong class="text-warning">ATH-109</strong> | Status: <span class="text-success fw-bold">In-Time</span></div>
-                            <div class="mock-cell p-2">Net Salary Payout: <strong class="text-white">₹44,200</strong></div>
+                        <!-- High Fidelity Sheet Visual Grid -->
+                        <div class="sheet-visual-grid p-2 mb-2">
+                            <div class="sheet-visual-header d-flex gap-2 justify-content-between align-items-center">
+                                <span class="text-muted">ID</span><span class="text-muted">Employee Name</span><span class="text-muted">In-Time</span><span class="text-muted">Salary</span>
+                            </div>
+                            <div class="sheet-visual-row d-flex justify-content-between">
+                                <span>101</span><span class="text-white">Vishal T.</span><span class="badge bg-success-light text-success py-1">09:15 AM</span><span class="text-warning">₹48,500</span>
+                            </div>
+                            <div class="sheet-visual-row d-flex justify-content-between">
+                                <span>102</span><span class="text-white">Nikunj P.</span><span class="badge bg-success-light text-success py-1">09:30 AM</span><span class="text-warning">₹54,000</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -375,14 +383,22 @@
                                 <div class="sys-badge bg-primary-light text-blue"><i class="fa-solid fa-cart-shopping me-2"></i>Sales</div>
                                 <span class="small text-muted"><i class="fa-solid fa-circle-check text-success"></i> Auto-Manifest</span>
                             </div>
-                            <h5 class="text-white mb-2">End-to-End Order Management</h5>
+                            <h5 class="text-white mb-2">End-to-End Order Management System (रियल-टाइम सेल्स पाइपलाइन और इन्वेंटरी सिंक)</h5>
                             <p class="small text-muted mb-4">
-                                Centralize orders from Retail, Whatsapp, and Trading networks. Automatically deplete inventory levels on sale, trigger re-order alerts, and generate delivery challans.
+                                Centralize multi-channel order pipelines, sync real-time stocks, automate re-order thresholds, and print packing invoices automatically.
                             </p>
                         </div>
-                        <div class="ui-sheet-mockup p-3">
-                            <div class="mock-cell p-2 mb-2 d-flex justify-content-between"><span>Pending: <strong>12</strong></span> <span class="text-danger">Low Stock Alert: <strong>03</strong></span></div>
-                            <div class="mock-cell p-2 text-center text-success">Inventory Status: Synced Successfully</div>
+                        <!-- High Fidelity Sheet Visual Grid -->
+                        <div class="sheet-visual-grid p-2 mb-2">
+                            <div class="sheet-visual-header d-flex gap-2 justify-content-between align-items-center">
+                                <span class="text-muted">Item ID</span><span class="text-muted">Stock Name</span><span class="text-muted">Qty</span><span class="text-muted">Status</span>
+                            </div>
+                            <div class="sheet-visual-row d-flex justify-content-between">
+                                <span>ATH-S1</span><span class="text-white">Balaji Packet</span><span>14,200</span><span class="badge bg-success-light text-success py-1">Synced</span>
+                            </div>
+                            <div class="sheet-visual-row d-flex justify-content-between">
+                                <span>ATH-S2</span><span class="text-white">Green Bag</span><span class="text-danger fw-bold">450</span><span class="badge bg-warning-light text-warning py-1">Low Stock</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -395,14 +411,22 @@
                                 <div class="sys-badge bg-success-light text-success"><i class="fa-solid fa-truck-moving me-2"></i>Logistics</div>
                                 <span class="small text-muted"><i class="fa-solid fa-circle-check text-success"></i> Fleet Control</span>
                             </div>
-                            <h5 class="text-white mb-2">Trip & Fleet Management Suite</h5>
+                            <h5 class="text-white mb-2">Logistics & Trip Management Suite (फ्यूल ट्रैकिंग, रूट एनालिसिस और ट्रिप मैनेजमेंट)</h5>
                             <p class="small text-muted mb-4">
-                                Track fleet trips, fuel consumption, driver allowances, toll charges, and profit margins per trip. Automate system alerts to dispatch managers when fuel efficiency drops.
+                                Track dispatch routes, driver trip allowances, toll costs, active fuel mileage charts, and gross trip profit analysis on central sheets.
                             </p>
                         </div>
-                        <div class="ui-sheet-mockup p-3">
-                            <div class="mock-cell p-2 mb-2">Active Trucks: <strong class="text-success">24 / 30</strong></div>
-                            <div class="mock-cell p-2 d-flex justify-content-between"><span>Route: GJ-01 to MH-02</span> <span class="text-warning">Margin: 32%</span></div>
+                        <!-- High Fidelity Sheet Visual Grid -->
+                        <div class="sheet-visual-grid p-2 mb-2">
+                            <div class="sheet-visual-header d-flex gap-2 justify-content-between align-items-center">
+                                <span class="text-muted">Fleet No</span><span class="text-muted">Route Path</span><span class="text-muted">Fuel Avg</span><span class="text-muted">Trip Margin</span>
+                            </div>
+                            <div class="sheet-visual-row d-flex justify-content-between">
+                                <span>GJ-01-A</span><span class="text-white">Ahmd to Mum</span><span>4.2 km/l</span><span class="text-success fw-bold">34% Profit</span>
+                            </div>
+                            <div class="sheet-visual-row d-flex justify-content-between">
+                                <span>MH-02-B</span><span class="text-white">Pune to Del</span><span>3.9 km/l</span><span class="text-success fw-bold">29% Profit</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -415,14 +439,22 @@
                                 <div class="sys-badge bg-danger-light text-danger"><i class="fa-solid fa-hospital-user me-2"></i>Healthcare</div>
                                 <span class="small text-muted"><i class="fa-solid fa-circle-check text-success"></i> OPD Scheduler</span>
                             </div>
-                            <h5 class="text-white mb-2">Hospital Management System</h5>
+                            <h5 class="text-white mb-2">Smart Hospital Management System (पेशेंट पोर्टल, डॉक्टर ओपीडी और वार्ड ऑक्युपेंसी ट्रैकर)</h5>
                             <p class="small text-muted mb-4">
-                                Track patient OPD registration, automate doctor OPD scheduling queues, coordinate ward occupancy levels, and sync billing sheets dynamically with pharmacy inventory.
+                                Streamline patient clinic flows. Coordinate dynamic doctor OPD queues, track ward bed availability, and sync billing logs automatically.
                             </p>
                         </div>
-                        <div class="ui-sheet-mockup p-3">
-                            <div class="mock-cell p-2 mb-2">Patients Registered Today: <strong class="text-white">142</strong></div>
-                            <div class="mock-cell p-2 text-center text-success">ICU Ward Status: 85% Occupied</div>
+                        <!-- High Fidelity Sheet Visual Grid -->
+                        <div class="sheet-visual-grid p-2 mb-2">
+                            <div class="sheet-visual-header d-flex gap-2 justify-content-between align-items-center">
+                                <span class="text-muted">Patient ID</span><span class="text-muted">OPD Doctor</span><span class="text-muted">Ward Bed</span><span class="text-muted">Status</span>
+                            </div>
+                            <div class="sheet-visual-row d-flex justify-content-between">
+                                <span>P-801</span><span class="text-white">Dr. J. Shah</span><span>ICU - Bed 04</span><span class="badge bg-success-light text-success py-1">Admitted</span>
+                            </div>
+                            <div class="sheet-visual-row d-flex justify-content-between">
+                                <span>P-802</span><span class="text-white">Dr. A. Patel</span><span>OPD Queue</span><span class="badge bg-warning-light text-warning py-1">In Consulting</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -435,14 +467,22 @@
                                 <div class="sys-badge bg-cyan-light text-accent"><i class="fa-solid fa-scale-balanced me-2"></i>Accounts</div>
                                 <span class="small text-muted"><i class="fa-solid fa-circle-check text-success"></i> Auto Auditor</span>
                             </div>
-                            <h5 class="text-white mb-2">Government Compliance Tracker</h5>
+                            <h5 class="text-white mb-2">Government Compliance & Automated Books of Account Tracker (जीएसटी/टैक्स और वित्तीय कानूनों के ऑडिट का ऑटोमैटिक ट्रैकर)</h5>
                             <p class="small text-muted mb-4">
-                                Track accounts dynamically. Verify compliance with government tax laws (GST, TDS limits, corporate filing thresholds) and instantly alerting you of accounting anomalies.
+                                Keep accounts legally compliant. Auto-audits ledger details, flags GST input gaps, tracks TDS limits, and logs compliance anomalies.
                             </p>
                         </div>
-                        <div class="ui-sheet-mockup p-3">
-                            <div class="mock-cell p-2 mb-2">GST Inward Mismatch: <strong class="text-danger">0 Detected</strong></div>
-                            <div class="mock-cell p-2 text-center text-warning"><i class="fa-solid fa-circle-check me-1"></i> Tax Audit Log Verified</div>
+                        <!-- High Fidelity Sheet Visual Grid -->
+                        <div class="sheet-visual-grid p-2 mb-2">
+                            <div class="sheet-visual-header d-flex gap-2 justify-content-between align-items-center">
+                                <span class="text-muted">Ledger ID</span><span class="text-muted">GST Code Audit</span><span class="text-muted">TDS Threshold</span><span class="text-muted">Audit Log</span>
+                            </div>
+                            <div class="sheet-visual-row d-flex justify-content-between">
+                                <span>L-334</span><span class="text-white">18% Bracket</span><span>Verified OK</span><span class="badge bg-success-light text-success py-1">Compliant</span>
+                            </div>
+                            <div class="sheet-visual-row d-flex justify-content-between">
+                                <span>L-335</span><span class="text-white">12% Bracket</span><span class="text-danger fw-bold">Anomaly Alert</span><span class="badge bg-warning-light text-warning py-1">Action Req</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -455,16 +495,18 @@
                                 <div class="sys-badge bg-purple-light text-purple"><i class="fa-solid fa-code me-2"></i>Web Tech</div>
                                 <span class="small text-muted"><i class="fa-solid fa-circle-check text-success"></i> Custom Platforms</span>
                             </div>
-                            <h5 class="text-white mb-2">Premium Corporate Web Dev</h5>
+                            <h5 class="text-white mb-2">Premium Corporate Web Development (हाई-स्पीड कस्टम वेबसाइट्स और वेब एप्लीकेशन्स)</h5>
                             <p class="small text-muted mb-4">
-                                We design and build ultra-premium, modern, high-speed corporate websites, database architectures, client portals, and administrative web apps optimized for mobile.
+                                High-speed, responsive corporate portals, database integrations, administrative backends, and investor-ready systems built on custom web frameworks.
                             </p>
                         </div>
-                        <div class="ui-sheet-mockup p-3">
-                            <div class="row g-2">
-                                <div class="col-4 text-center">Mobile: <strong class="text-success">100%</strong></div>
-                                <div class="col-4 text-center">Speed: <strong class="text-success">A+</strong></div>
-                                <div class="col-4 text-center">SEO: <strong class="text-success">98</strong></div>
+                        <!-- High Fidelity Sheet Visual Grid -->
+                        <div class="sheet-visual-grid p-2 mb-2">
+                            <div class="sheet-visual-header d-flex gap-2 justify-content-between align-items-center">
+                                <span class="text-muted">SEO Rank</span><span class="text-muted">Server Speed</span><span class="text-muted">Mobile Score</span><span class="text-muted">SSL Status</span>
+                            </div>
+                            <div class="sheet-visual-row d-flex justify-content-between">
+                                <span>Rank #1</span><span class="text-white">99 / 100 A+</span><span>100% Responsive</span><span class="text-success fw-bold">Active HTTPS</span>
                             </div>
                         </div>
                     </div>
@@ -483,9 +525,17 @@
                                 Track field sales team locations, schedule daily dealer routes, and let executives book orders on-site via custom mobile forms synced instantly with dispatch offices.
                             </p>
                         </div>
-                        <div class="ui-sheet-mockup p-3">
-                            <div class="mock-cell p-2 mb-2">Dealers Visited Today: <strong class="text-white">48 / 60</strong></div>
-                            <div class="mock-cell p-2 text-center text-success">Total Booked Value: ₹4.8 Lakhs</div>
+                        <!-- High Fidelity Sheet Visual Grid -->
+                        <div class="sheet-visual-grid p-2 mb-2">
+                            <div class="sheet-visual-header d-flex gap-2 justify-content-between align-items-center">
+                                <span class="text-muted">Sales Rep</span><span class="text-muted">Dealer Shop</span><span class="text-muted">Order booked</span><span class="text-muted">Route Map</span>
+                            </div>
+                            <div class="sheet-visual-row d-flex justify-content-between">
+                                <span>Amit S.</span><span class="text-white">Krishna Stores</span><span>₹42,500</span><span class="badge bg-success-light text-success py-1">Route-A OK</span>
+                            </div>
+                            <div class="sheet-visual-row d-flex justify-content-between">
+                                <span>Suresh K.</span><span class="text-white">Maruti Provisions</span><span>₹28,900</span><span class="badge bg-success-light text-success py-1">Route-B OK</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -594,516 +644,3 @@
             </div>
         </div>
     </section>
-
-    <!-- Industries We Serve Section -->
-    <section id="industries" class="industries-section py-6 bg-light-gradient">
-        <div class="container">
-            <div class="text-center mb-5" data-aos="fade-up">
-                <span class="text-uppercase tracking-wider subtitle-badge mb-3 d-inline-block"><i class="fa-solid fa-industry me-2"></i>Target Markets</span>
-                <h2 class="section-title text-primary-color">Industries We Serve</h2>
-                <p class="text-muted max-width-600 mx-auto">Adaptive systems designed for complex operational environments.</p>
-            </div>
-
-            <div class="row g-3 justify-content-center">
-                <div class="col-6 col-md-4 col-lg-2-4" data-aos="zoom-in" data-aos-delay="50">
-                    <div class="industry-badge text-center">
-                        <i class="fa-solid fa-industry mb-2"></i>
-                        <h6>Manufacturing</h6>
-                    </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-2-4" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="industry-badge text-center">
-                        <i class="fa-solid fa-hospital mb-2"></i>
-                        <h6>Hospitals</h6>
-                    </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-2-4" data-aos="zoom-in" data-aos-delay="150">
-                    <div class="industry-badge text-center">
-                        <i class="fa-solid fa-truck-ramp-box mb-2"></i>
-                        <h6>Transport & Logistics</h6>
-                    </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-2-4" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="industry-badge text-center">
-                        <i class="fa-solid fa-store mb-2"></i>
-                        <h6>Retail</h6>
-                    </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-2-4" data-aos="zoom-in" data-aos-delay="250">
-                    <div class="industry-badge text-center">
-                        <i class="fa-solid fa-basket-shopping mb-2"></i>
-                        <h6>FMCG</h6>
-                    </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-2-4" data-aos="zoom-in" data-aos-delay="300">
-                    <div class="industry-badge text-center">
-                        <i class="fa-solid fa-pills mb-2"></i>
-                        <h6>Pharmaceutical</h6>
-                    </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-2-4" data-aos="zoom-in" data-aos-delay="350">
-                    <div class="industry-badge text-center">
-                        <i class="fa-solid fa-right-left mb-2"></i>
-                        <h6>Trading Companies</h6>
-                    </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-2-4" data-aos="zoom-in" data-aos-delay="400">
-                    <div class="industry-badge text-center">
-                        <i class="fa-solid fa-handshake mb-2"></i>
-                        <h6>Service Businesses</h6>
-                    </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-2-4" data-aos="zoom-in" data-aos-delay="450">
-                    <div class="industry-badge text-center">
-                        <i class="fa-solid fa-ship mb-2"></i>
-                        <h6>Export Houses</h6>
-                    </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-2-4" data-aos="zoom-in" data-aos-delay="500">
-                    <div class="industry-badge text-center">
-                        <i class="fa-solid fa-warehouse mb-2"></i>
-                        <h6>Warehousing</h6>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Interactive Financial Growth Section -->
-    <section id="growth" class="growth-section py-6">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-5 mb-5 mb-lg-0" data-aos="fade-right">
-                    <span class="text-uppercase tracking-wider subtitle-badge mb-3 d-inline-block"><i class="fa-solid fa-magnifying-glass-chart me-2"></i>Strategic Analytics</span>
-                    <h2 class="section-title text-primary-color mb-4">Financial Growth Targets</h2>
-                    <p class="body-text text-muted mb-4">
-                        Our structured roadmap supports systematic execution. The targets below map out our revenue projections and profit milestones over three fiscal cycles.
-                    </p>
-                    <div class="growth-metric-box mb-3 d-flex align-items-center justify-content-between p-3 border-left-accent">
-                        <div>
-                            <span class="small text-muted d-block">YEAR 1 Target</span>
-                            <strong>Revenue: ₹15 Lakhs</strong>
-                        </div>
-                        <span class="badge bg-primary-light text-blue">Profit: ₹5 Lakhs</span>
-                    </div>
-                    <div class="growth-metric-box mb-3 d-flex align-items-center justify-content-between p-3 border-left-accent">
-                        <div>
-                            <span class="small text-muted d-block">YEAR 2 Target</span>
-                            <strong>Revenue: ₹35 Lakhs</strong>
-                        </div>
-                        <span class="badge bg-primary-light text-blue">Profit: ₹12 Lakhs</span>
-                    </div>
-                    <div class="growth-metric-box d-flex align-items-center justify-content-between p-3 border-left-accent">
-                        <div>
-                            <span class="small text-muted d-block">YEAR 3 Target</span>
-                            <strong>Revenue: ₹75 Lakhs</strong>
-                        </div>
-                        <span class="badge bg-accent-light text-accent">Profit: ₹30 Lakhs</span>
-                    </div>
-                </div>
-                <div class="col-lg-7 ps-lg-5" data-aos="fade-left">
-                    <div class="glass-card p-4">
-                        <div class="d-flex justify-content-between align-items-center mb-4">
-                            <h5 class="mb-0 text-primary-color">Strategic Growth Metrics (₹ Lakhs)</h5>
-                            <span class="small text-muted"><i class="fa-solid fa-circle-check text-accent me-1"></i> Multi-Year Projections</span>
-                        </div>
-                        <div class="chart-container" style="position: relative; height:320px; width:100%">
-                            <canvas id="growthChart"></canvas>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Why Choose Us & Benefits -->
-    <section class="benefits-section py-6 bg-light-gradient">
-        <div class="container">
-            <div class="text-center mb-5" data-aos="fade-up">
-                <span class="text-uppercase tracking-wider subtitle-badge mb-3 d-inline-block"><i class="fa-solid fa-square-check me-2"></i>Performance Engineering</span>
-                <h2 class="section-title text-primary-color">Why Choose Us & Benefits</h2>
-                <p class="text-muted max-width-600 mx-auto">Providing systematic solutions designed to deliver long-term operational advantages.</p>
-            </div>
-
-            <div class="row g-4">
-                <!-- Why Choose Us -->
-                <div class="col-lg-6" data-aos="fade-right">
-                    <h4 class="mb-4 text-primary-color border-bottom-title">Why Choose Us</h4>
-                    <div class="d-flex align-items-start mb-3 gap-3">
-                        <div class="round-icon bg-blue-light"><i class="fa-solid fa-wallet text-blue"></i></div>
-                        <div>
-                            <h6 class="text-primary-color mb-1">Affordable Solutions</h6>
-                            <p class="text-muted small">Access robust automation systems custom tailored to fit reasonable mid-market operational budgets.</p>
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-start mb-3 gap-3">
-                        <div class="round-icon bg-cyan-light"><i class="fa-solid fa-sliders text-accent"></i></div>
-                        <div>
-                            <h6 class="text-primary-color mb-1">Custom Development</h6>
-                            <p class="text-muted small">Every module is custom mapped to fit your existing departmental tracking workflows.</p>
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-start mb-3 gap-3">
-                        <div class="round-icon bg-green-light"><i class="fa-solid fa-bolt text-success"></i></div>
-                        <div>
-                            <h6 class="text-primary-color mb-1">Fast Deployment</h6>
-                            <p class="text-muted small">We prioritize rapid implementation loops to prevent operational disruptions during cutovers.</p>
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-start gap-3">
-                        <div class="round-icon bg-warning-light"><i class="fa-solid fa-headset text-warning"></i></div>
-                        <div>
-                            <h6 class="text-primary-color mb-1">Dedicated Support & Scalability</h6>
-                            <p class="text-muted small">Access ongoing support frameworks to adjust business systems as transactional volumes grow.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Client Benefits -->
-                <div class="col-lg-6" data-aos="fade-left">
-                    <h4 class="mb-4 text-primary-color border-bottom-title">Client Benefits</h4>
-                    <div class="d-flex align-items-start mb-3 gap-3">
-                        <div class="round-icon bg-danger-light"><i class="fa-solid fa-arrow-trend-down text-danger"></i></div>
-                        <div>
-                            <h6 class="text-primary-color mb-1">Reduce Manual Work & Save Time</h6>
-                            <p class="text-muted small">Minimize data entry workloads to redirect focus to core growth areas.</p>
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-start mb-3 gap-3">
-                        <div class="round-icon bg-primary-light"><i class="fa-solid fa-chart-line text-primary-color"></i></div>
-                        <div>
-                            <h6 class="text-primary-color mb-1">Improve Productivity & Profitability</h6>
-                            <p class="text-muted small">Optimized workflows allow teams to handle higher volumes with minimal bottlenecks.</p>
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-start mb-3 gap-3">
-                        <div class="round-icon bg-purple-light"><i class="fa-solid fa-database text-purple"></i></div>
-                        <div>
-                            <h6 class="text-primary-color mb-1">Centralized Data & Better Reporting</h6>
-                            <p class="text-muted small">Consolidate multiple reporting points into clean, automated corporate dashboards.</p>
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-start gap-3">
-                        <div class="round-icon bg-success-light"><i class="fa-solid fa-up-right-and-down-left-from-center text-success"></i></div>
-                        <div>
-                            <h6 class="text-primary-color mb-1">Improve Decision Making & Scalability</h6>
-                            <p class="text-muted small">Real-time performance metrics provide clear and reliable operational insights.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Client Portfolio & Testimonials Section -->
-    <section id="testimonials" class="client-portfolio-section py-6">
-        <div class="container">
-            <div class="text-center mb-5" data-aos="fade-up">
-                <span class="text-uppercase tracking-wider subtitle-badge mb-3 d-inline-block">
-                    <i class="fa-solid fa-handshake-angle me-2"></i>Enterprise Network
-                </span>
-                <h2 class="section-title text-primary-color">Client Endorsements & Partners</h2>
-                <p class="text-muted max-width-600 mx-auto">
-                    We deliver customized business automation platforms designed to meet the high standards of market leaders.
-                </p>
-            </div>
-
-            <!-- Part 1: Three Core Client Cases -->
-            <div class="row g-4 mb-5">
-                <!-- Case 1: Balaji Wafers Private Limited -->
-                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="testimonial-card p-4 d-flex flex-column h-100 justify-content-between">
-                        <div>
-                            <div class="stars mb-3 text-warning">
-                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                            </div>
-                            <p class="testimonial-text text-muted mb-4">
-                                "Automatexhub transformed our custom reporting pipelines, removing manual data validation bottlenecks to save our teams hundreds of administrative hours monthly."
-                            </p>
-                        </div>
-                        <div class="testimonial-footer border-top pt-3 mt-auto">
-                            <h6 class="client-name text-primary-color mb-1">Vishal Tiwari</h6>
-                            <p class="small text-muted mb-3">Operation Head</p>
-                            <!-- Mini Company Branding -->
-                            <div class="company-badge-logo d-inline-flex align-items-center">
-                                <img src="images/balaji.png" alt="Balaji Wafers Logo" class="mini-brand-img me-2" onerror="this.onerror=null; this.src='https://placehold.co/40/0f172a/06b6d4?text=B';">
-                                <span class="fw-bold text-uppercase tracking-wider company-text-label">Balaji Wafers Pvt. Ltd.</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Case 2: Niva Green Industries Pvt. Ltd. -->
-                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="testimonial-card p-4 d-flex flex-column h-100 justify-content-between">
-                        <div>
-                            <div class="stars mb-3 text-warning">
-                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                            </div>
-                            <p class="testimonial-text text-muted mb-4">
-                                "The custom automation modules provided by Dhiraj Jain's team integrate with our operational requirements. The support system is highly responsive."
-                            </p>
-                        </div>
-                        <div class="testimonial-footer border-top pt-3 mt-auto">
-                            <h6 class="client-name text-primary-color mb-1">Nikunj Patel</h6>
-                            <p class="small text-muted mb-3">Managing Director</p>
-                            <!-- Mini Company Branding -->
-                            <div class="company-badge-logo d-inline-flex align-items-center">
-                                <img src="images/niva.png" alt="Niva Green Logo" class="mini-brand-img me-2" onerror="this.onerror=null; this.src='https://placehold.co/40/0f172a/10b981?text=N';">
-                                <span class="fw-bold text-uppercase tracking-wider company-text-label">Niva Green Industries</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Case 3: Seatrans International (Private) Limited -->
-                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
-                    <div class="testimonial-card p-4 d-flex flex-column h-100 justify-content-between">
-                        <div>
-                            <div class="stars mb-3 text-warning">
-                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                            </div>
-                            <p class="testimonial-text text-muted mb-4">
-                                "The custom logistics tracking and automated billing applications have structured our daily workflow, improving transaction transparency."
-                            </p>
-                        </div>
-                        <div class="testimonial-footer border-top pt-3 mt-auto">
-                            <h6 class="client-name text-primary-color mb-1">Operations & Systems Lead</h6>
-                            <p class="small text-muted mb-3">Customs & Logistics Div.</p>
-                            <!-- Mini Company Branding -->
-                            <div class="company-badge-logo d-inline-flex align-items-center">
-                                <img src="images/seatrans.jfif" alt="Seatrans International Logo" class="mini-brand-img me-2" onerror="this.onerror=null; this.src='https://placehold.co/40/0f172a/3b82f6?text=S';">
-                                <span class="fw-bold text-uppercase tracking-wider company-text-label">Seatrans International</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Part 2: Corporate Brand Image Grid (No Filters / Always Colored) -->
-            <div class="client-logos-wrapper mt-5 pt-5 border-top-glass" data-aos="fade-up">
-                <div class="text-center mb-4">
-                    <span class="small text-uppercase tracking-wider text-muted fw-bold">Trusted By Leading Brands</span>
-                </div>
-                <div class="row row-cols-2 row-cols-md-4 row-cols-lg-7 g-3 align-items-center justify-content-center text-center">
-                    <!-- Logo 1: Balaji Wafers -->
-                    <div class="col">
-                        <div class="logo-grid-card">
-                            <img src="images/balaji.png" alt="Balaji Wafers" class="img-fluid client-grid-logo" title="Balaji Wafers" onerror="this.onerror=null; this.src='https://placehold.co/180x60/0f172a/06b6d4?text=BALAJI';">
-                        </div>
-                    </div>
-                    <!-- Logo 2: Niva -->
-                    <div class="col">
-                        <div class="logo-grid-card">
-                            <img src="images/niva.png" alt="Niva Green Industries" class="img-fluid client-grid-logo" title="Niva Green Industries" onerror="this.onerror=null; this.src='https://placehold.co/180x60/0f172a/10b981?text=NIVA';">
-                        </div>
-                    </div>
-                    <!-- Logo 3: Seatrans International -->
-                    <div class="col">
-                        <div class="logo-grid-card">
-                            <img src="images/seatrans.jfif" alt="Seatrans International" class="img-fluid client-grid-logo" title="Seatrans International" onerror="this.onerror=null; this.src='https://placehold.co/180x60/0f172a/3b82f6?text=SEATRANS';">
-                        </div>
-                    </div>
-                    <!-- Logo 4: Wockhardt Hospitals -->
-                    <div class="col">
-                        <div class="logo-grid-card">
-                            <img src="images/wockhardt.png" alt="Wockhardt Hospitals" class="img-fluid client-grid-logo" title="Wockhardt Hospitals" onerror="this.onerror=null; this.src='https://placehold.co/180x60/0f172a/ef4444?text=WOCKHARDT';">
-                        </div>
-                    </div>
-                    <!-- Logo 5: Synergy Multispeciality Hospital -->
-                    <div class="col">
-                        <div class="logo-grid-card">
-                            <img src="images/synergy.png" alt="Synergy Multispeciality Hospital" class="img-fluid client-grid-logo" title="Synergy Multispeciality Hospital" onerror="this.onerror=null; this.src='https://placehold.co/180x60/0f172a/f59e0b?text=SYNERGY';">
-                        </div>
-                    </div>
-                    <!-- Logo 6: Lemon Tree Hotels -->
-                    <div class="col">
-                        <div class="logo-grid-card">
-                            <img src="images/lemontree.png" alt="Lemon Tree Hotels" class="img-fluid client-grid-logo" title="Lemon Tree Hotels" onerror="this.onerror=null; this.src='https://placehold.co/180x60/0f172a/8b5cf6?text=LEMON+TREE';">
-                        </div>
-                    </div>
-                    <!-- Logo 7: Orbit -->
-                    <div class="col">
-                        <div class="logo-grid-card">
-                            <img src="images/orbit.png" alt="Orbit" class="img-fluid client-grid-logo" title="Orbit" onerror="this.onerror=null; this.src='https://placehold.co/180x60/0f172a/22d3ee?text=ORBIT';">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Consultation Section -->
-    <section id="contact" class="contact-section py-6 bg-light-gradient">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-5 mb-5 mb-lg-0" data-aos="fade-right">
-                    <span class="text-uppercase tracking-wider subtitle-badge mb-3 d-inline-block"><i class="fa-solid fa-envelope me-2"></i>Inquiry Desk</span>
-                    <h2 class="section-title text-primary-color mb-4">Schedule Your Consultation</h2>
-                    <p class="text-muted mb-4">
-                        Contact us today for a free operations review. We will evaluate your current workflow bottlenecks and outline an implementation plan.
-                    </p>
-                    <div class="contact-detail-row d-flex align-items-center gap-3 mb-3">
-                        <div class="round-icon bg-blue-light"><i class="fa-solid fa-location-dot text-blue"></i></div>
-                        <div>
-                            <span class="small text-muted d-block">Scope of Operations</span>
-                            <strong>Pan-India System Integration</strong>
-                        </div>
-                    </div>
-                    <div class="contact-detail-row d-flex align-items-center gap-3">
-                        <div class="round-icon bg-cyan-light"><i class="fa-solid fa-user-check text-accent"></i></div>
-                        <div>
-                            <span class="small text-muted d-block">Leadership Contact</span>
-                            <strong>Dhiraj Jain (MBA Finance)</strong>
-                        </div>
-                    </div>
-                    <!-- Direct Mobile Link Updated -->
-                    <div class="contact-detail-row d-flex align-items-center gap-3 mt-3">
-                        <div class="round-icon bg-success-light"><i class="fa-solid fa-phone text-success"></i></div>
-                        <div>
-                            <span class="small text-muted d-block">Mobile Contact</span>
-                            <strong>+91 9216457535</strong>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-7 ps-lg-5" data-aos="fade-left">
-                    <div class="glass-card p-4 p-md-5">
-                        <h4 class="mb-4 text-primary-color">GET FREE CONSULTATION</h4>
-                        <form id="consultationForm">
-                            <div class="row g-3">
-                                <div class="col-md-6">
-                                    <label for="fullName" class="form-label text-muted small">Full Name *</label>
-                                    <input type="text" class="form-control" id="fullName" placeholder="John Doe" required>
-                                </div>
-                                <div class="col-md-6">
-                                    <label for="companyName" class="form-label text-muted small">Company Name *</label>
-                                    <input type="text" class="form-control" id="companyName" placeholder="Acme Corp" required>
-                                </div>
-                                <div class="col-md-6">
-                                    <label for="mobileNo" class="form-label text-muted small">Mobile Number *</label>
-                                    <input type="tel" class="form-control" id="mobileNo" placeholder="+91 XXXXX XXXXX" required>
-                                </div>
-                                <div class="col-md-6">
-                                    <label for="emailAddr" class="form-label text-muted small">Email Address *</label>
-                                    <input type="email" class="form-control" id="emailAddr" placeholder="john@acme.com" required>
-                                </div>
-                                <div class="col-12">
-                                    <label for="businessReq" class="form-label text-muted small">Business Requirement *</label>
-                                    <select class="form-select" id="businessReq" required>
-                                        <option value="" disabled selected>Select system requirement...</option>
-                                        <option value="ERP Development">ERP Development</option>
-                                        <option value="Process Automation">Business Process Automation</option>
-                                        <option value="Sheets Automation">Google Sheets Automation</option>
-                                        <option value="Inventory System">Inventory Management</option>
-                                        <option value="HR Payroll">HR & Payroll Automation</option>
-                                        <option value="Financial Report">Financial Reporting & MIS</option>
-                                        <option value="WhatsApp System">WhatsApp Automation</option>
-                                        <option value="Custom Software">Custom Software Development</option>
-                                    </select>
-                                </div>
-                                <div class="col-12">
-                                    <label for="messageText" class="form-label text-muted small">Message</label>
-                                    <textarea class="form-control" id="messageText" rows="4" placeholder="Briefly outline your manual tracking bottlenecks..."></textarea>
-                                </div>
-                                <div class="col-12 mt-4">
-                                    <button type="submit" class="btn btn-primary-custom w-100 py-3">GET FREE CONSULTATION</button>
-                                </div>
-                            </div>
-                        </form>
-                        <div id="formSuccess" class="alert alert-success mt-3 d-none" role="alert">
-                            Thank you. Your request is registered. We will contact you soon.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Premium Redesigned Footer -->
-    <footer class="footer-section pt-5 pb-4 bg-dark-slate text-light">
-        <div class="container">
-            <div class="row g-4 justify-content-between">
-                <!-- Column 1: Brand & Contact -->
-                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-                    <img src="Logo.png" alt="Automatexhub Logo" class="brand-logo-img mb-3" style="max-height: 48px;" onerror="this.onerror=null; this.src='https://placehold.co/180x45/0f172a/f97316?text=AUTOMATEXHUB';">
-                    <p class="small text-muted mb-4" style="line-height: 1.7;">
-                        Transforming Businesses Through Automation. We engineer high-performance background pipelines, custom ERP configurations, and automated reporting systems.
-                    </p>
-                    <div class="footer-contact-info">
-                        <div class="d-flex align-items-center mb-2">
-                            <i class="fa-solid fa-phone text-secondary me-3 small"></i>
-                            <span class="small text-muted">+91 9216457535</span>
-                        </div>
-                        <div class="d-flex align-items-center">
-                            <i class="fa-solid fa-envelope text-secondary me-3 small"></i>
-                            <span class="small text-muted">contact@automatexhub.com</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Column 2: System Services -->
-                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
-                    <h6 class="text-white mb-3 text-uppercase tracking-wider small">Services</h6>
-                    <ul class="list-unstyled footer-links small text-muted">
-                        <li><a href="#services"><i class="fa-solid fa-chevron-right me-2 text-secondary-light"></i>ERP Development</a></li>
-                        <li><a href="#services"><i class="fa-solid fa-chevron-right me-2 text-secondary-light"></i>Workflow Flows</a></li>
-                        <li><a href="#services"><i class="fa-solid fa-chevron-right me-2 text-secondary-light"></i>Google Workspace</a></li>
-                        <li><a href="#services"><i class="fa-solid fa-chevron-right me-2 text-secondary-light"></i>Inventory Systems</a></li>
-                        <li><a href="#services"><i class="fa-solid fa-chevron-right me-2 text-secondary-light"></i>MIS Reporting</a></li>
-                    </ul>
-                </div>
-
-                <!-- Column 3: Navigation Links -->
-                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
-                    <h6 class="text-white mb-3 text-uppercase tracking-wider small">Quick Access</h6>
-                    <ul class="list-unstyled footer-links small text-muted">
-                        <li><a href="#home"><i class="fa-solid fa-angle-right me-2"></i>Home Portal</a></li>
-                        <li><a href="#about"><i class="fa-solid fa-angle-right me-2"></i>About Us</a></li>
-                        <li><a href="#services"><i class="fa-solid fa-angle-right me-2"></i>Our Services</a></li>
-                        <li><a href="#industries"><i class="fa-solid fa-angle-right me-2"></i>Industries</a></li>
-                        <li><a href="#contact"><i class="fa-solid fa-angle-right me-2"></i>Contact Desk</a></li>
-                    </ul>
-                </div>
-
-                <!-- Column 4: Professional Connections -->
-                <div class="col-lg-3 col-md-6">
-                    <h6 class="text-white mb-3 text-uppercase tracking-wider small">Founder Profile</h6>
-                    <p class="small text-muted mb-2"><strong>Dhiraj Jain</strong></p>
-                    <p class="small text-muted mb-3" style="line-height: 1.5;">MBA Finance executive with specialized focus in costing, process automation, accounting pipelines, and MIS structures.</p>
-                    <div class="social-icons">
-                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="https://wa.me/919216457535?text=Hello%20Automatexhub%20Team,%20I%20would%20like%20to%20schedule%20a%20free%20consultation." target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Bottom Copyright Section -->
-            <div class="footer-bottom border-top border-secondary-light mt-5 pt-4 d-flex flex-md-row flex-column justify-content-between align-items-center small text-muted">
-                <p class="mb-2 mb-md-0">&copy; <span id="currentYear"></span> AUTOMATEXHUB. All Rights Reserved.</p>
-                <div class="footer-bottom-links">
-                    <a href="#about" class="text-muted text-decoration-none me-3">Privacy Policy</a>
-                    <a href="#contact" class="text-muted text-decoration-none">Terms of Service</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Floating WhatsApp Action -->
-    <a href="https://wa.me/919216457535?text=Hello%20Automatexhub%20Team,%20I%20would%20like%20to%20schedule%20a%20free%20consultation." 
-       class="floating-whatsapp" 
-       target="_blank" 
-       rel="noopener noreferrer" 
-       aria-label="Chat on WhatsApp">
-        <i class="fa-brands fa-whatsapp"></i>
-    </a>
-
-    <!-- JS Libraries -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    
-    <!-- Custom Logic Script -->
-    <script src="script.js"></script>
-</body>
-</html>
-
