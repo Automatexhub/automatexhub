@@ -609,7 +609,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Dynamic Enterprise Systems Portfolio ("WHAT WE DO") */
 .system-showcase-section {
-    background-color: #0b0f19 !important;
+    background-color: #0F172A !important; /* Forces slate dark background always on both modes */
 }
 
 .system-showcase-card {
@@ -627,20 +627,31 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: 0.5px;
 }
 
-/* Simulated Tech Dashboard Sheet Mockup */
-.ui-sheet-mockup {
-    background: rgba(15, 23, 42, 0.6);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: 12px;
+/* Simulated Tech Google Spreadsheet Visual Grids */
+.sheet-visual-grid {
+    background: #1E293B !important; /* Google sheet dark theme style */
+    border: 1px solid rgba(255, 255, 255, 0.12) !important;
+    border-radius: 8px;
     font-family: 'Inter', monospace;
-    font-size: 0.8rem;
-    color: #94a3b8;
+    font-size: 0.75rem;
+    color: #94A3B8;
 }
 
-.mock-cell {
-    background: rgba(255, 255, 255, 0.02);
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    border-radius: 6px;
+.sheet-visual-header {
+    background: #0F172A !important;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.15) !important;
+    padding: 0.4rem 0.6rem;
+    font-weight: 700;
+    border-radius: 6px 6px 0 0;
+}
+
+.sheet-visual-row {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 0.45rem 0.6rem;
+}
+
+.sheet-visual-row:last-child {
+    border-bottom: none;
 }
 
 .system-showcase-card:hover {
@@ -649,9 +660,9 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0 15px 35px -8px rgba(249, 115, 22, 0.18) !important;
 }
 
-.system-showcase-card:hover .ui-sheet-mockup {
-    border-color: rgba(249, 115, 22, 0.25);
-    background: rgba(15, 23, 42, 0.8);
+.system-showcase-card:hover .sheet-visual-grid {
+    border-color: rgba(249, 115, 22, 0.35) !important;
+    background: #0F172A !important;
 }
 
 /* Premium Redesigned Footer Section with COMPLETE High-Contrast overrides */
@@ -773,201 +784,3 @@ footer.footer-section p.small {
         padding-bottom: 3.5rem;
     }
 }
-```
-
----
-
-### फ़ाइल 3: `script.js` (अपडेटेड फ़ाइनल कोड)
-```javascript
-document.addEventListener("DOMContentLoaded", () => {
-    
-    // 1. Initialize AOS animation sequences
-    AOS.init({
-        duration: 850,
-        easing: 'ease-in-out',
-        once: true,
-        mirror: false
-    });
-
-    // 2. Light / Dark Mode Color Logic
-    const themeToggleBtn = document.getElementById("themeToggle");
-    const htmlElement = document.documentElement;
-    
-    const savedTheme = localStorage.getItem("theme") || "light";
-    htmlElement.setAttribute("data-theme", savedTheme);
-    updateThemeIcon(savedTheme);
-
-    themeToggleBtn.addEventListener("click", () => {
-        const currentTheme = htmlElement.getAttribute("data-theme");
-        const targetTheme = currentTheme === "light" ? "dark" : "light";
-        
-        htmlElement.setAttribute("data-theme", targetTheme);
-        localStorage.setItem("theme", targetTheme);
-        updateThemeIcon(targetTheme);
-        
-        // Redraw growth metric canvas to match current theme parameters
-        if (growthChartInstance) {
-            growthChartInstance.destroy();
-            renderGrowthChart();
-        }
-    });
-
-    function updateThemeIcon(theme) {
-        const icon = themeToggleBtn.querySelector("i");
-        if (theme === "dark") {
-            icon.className = "fa-solid fa-sun text-warning";
-        } else {
-            icon.className = "fa-solid fa-moon";
-        }
-    }
-
-    // 3. Dynamic Numeric Target Counter Trigger
-    const counterElements = document.querySelectorAll(".counter-num");
-    
-    const triggerNumericCounters = () => {
-        counterElements.forEach(counter => {
-            const target = parseInt(counter.getAttribute("data-target"));
-            const duration = 2000;
-            const stepDuration = Math.max(Math.floor(duration / target), 15);
-            let current = 0;
-            
-            const timer = setInterval(() => {
-                current += 1;
-                counter.textContent = current;
-                if (current >= target) {
-                    counter.textContent = target;
-                    clearInterval(timer);
-                }
-            }, stepDuration);
-        });
-    };
-
-    let observed = false;
-    const scrollObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting && !observed) {
-                triggerNumericCounters();
-                observed = true;
-            }
-        });
-    }, { threshold: 0.4 });
-
-    const counterSection = document.querySelector(".counter-container");
-    if (counterSection) {
-        scrollObserver.observe(counterSection);
-    }
-
-    // 4. Chart.js Multi-Year Growth Visualization (Colors updated to Orange & Gold)
-    let growthChartInstance = null;
-
-    const renderGrowthChart = () => {
-        const ctx = document.getElementById("growthChart");
-        if (!ctx) return;
-
-        const isDark = htmlElement.getAttribute("data-theme") === "dark";
-        const gridColor = isDark ? "rgba(248, 250, 252, 0.08)" : "rgba(15, 23, 42, 0.05)";
-        const labelColor = isDark ? "#94a3b8" : "#64748b";
-
-        growthChartInstance = new Chart(ctx, {
-            type: 'bar',
-            data: {
-                labels: ['Year 1 Target', 'Year 2 Target', 'Year 3 Target'],
-                datasets: [
-                    {
-                        label: 'Revenue (₹ Lakhs)',
-                        data: [15, 35, 75],
-                        backgroundColor: '#F97316', // Brand Orange
-                        borderRadius: 6,
-                        barThickness: 28,
-                    },
-                    {
-                        label: 'Profit (₹ Lakhs)',
-                        data: [5, 12, 30],
-                        backgroundColor: '#F59E0B', // Golden Amber
-                        borderRadius: 6,
-                        barThickness: 28,
-                    }
-                ]
-            },
-            options: {
-                responsive: true,
-                maintainAspectRatio: false,
-                plugins: {
-                    legend: {
-                        position: 'top',
-                        labels: {
-                            color: labelColor,
-                            font: {
-                                family: 'Inter',
-                                size: 12,
-                                weight: '500'
-                            }
-                        }
-                    },
-                    tooltip: {
-                        backgroundColor: isDark ? '#1e293b' : '#0f172a',
-                        titleColor: '#ffffff',
-                        bodyColor: '#ffffff',
-                        cornerRadius: 8,
-                        padding: 12
-                    }
-                },
-                scales: {
-                    x: {
-                        grid: { display: false },
-                        ticks: {
-                            color: labelColor,
-                            font: {
-                                family: 'Plus Jakarta Sans',
-                                weight: '600'
-                            }
-                        }
-                    },
-                    y: {
-                        grid: { color: gridColor },
-                        ticks: {
-                            color: labelColor,
-                            callback: function(value) {
-                                return '₹' + value + 'L';
-                            },
-                            font: { family: 'Inter' }
-                        }
-                    }
-                }
-            }
-        });
-    };
-
-    renderGrowthChart();
-
-    // 5. Contact Consultation Form Submission
-    const consultationForm = document.getElementById("consultationForm");
-    const formSuccessAlert = document.getElementById("formSuccess");
-
-    if (consultationForm) {
-        consultationForm.addEventListener("submit", (e) => {
-            e.preventDefault();
-            
-            const name = document.getElementById("fullName").value;
-            const company = document.getElementById("companyName").value;
-            const mobile = document.getElementById("mobileNo").value;
-            const email = document.getElementById("emailAddr").value;
-            const req = document.getElementById("businessReq").value;
-
-            if (name && company && mobile && email && req) {
-                formSuccessAlert.classList.remove("d-none");
-                consultationForm.reset();
-                
-                setTimeout(() => {
-                    formSuccessAlert.classList.add("d-none");
-                }, 5000);
-            }
-        });
-    }
-
-    // 6. Footer Copyright Auto-Year
-    const yearSpan = document.getElementById("currentYear");
-    if (yearSpan) {
-        yearSpan.textContent = new Date().getFullYear();
-    }
-});
